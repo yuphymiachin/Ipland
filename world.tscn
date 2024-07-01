@@ -1,14 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://ddv4veub13f0a"]
+[gd_scene load_steps=12 format=3 uid="uid://ddv4veub13f0a"]
 
-[ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="1_pwo7u"]
-[ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="1_valls"]
-[ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_c8ut2"]
-[ext_resource type="Texture2D" uid="uid://bdvhnnaksovsu" path="res://World/TreeTileMap.png" id="3_lcscj"]
+[ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="1_fsft0"]
+[ext_resource type="Script" path="res://World.gd" id="1_jepr1"]
+[ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_37ve3"]
+[ext_resource type="Texture2D" uid="uid://bdvhnnaksovsu" path="res://World/TreeTileMap.png" id="3_i7p84"]
+[ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="4_feyg5"]
+[ext_resource type="PackedScene" uid="uid://nogkhtqh6xa4" path="res://Characters/Babara/Babara.tscn" id="5_b5tb8"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gc6gg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t1bbp"]
-texture = ExtResource("2_c8ut2")
+texture = ExtResource("2_37ve3")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/terrain_set = 0
@@ -865,6 +867,7 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_l16ji"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_gc6gg")
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Sand"
@@ -878,7 +881,7 @@ terrain_set_0/terrain_3/color = Color(0.419608, 0.956863, 0.192157, 1)
 sources/0 = SubResource("TileSetAtlasSource_t1bbp")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4i44k"]
-texture = ExtResource("3_lcscj")
+texture = ExtResource("3_i7p84")
 texture_region_size = Vector2i(96, 128)
 1:0/0 = 0
 1:0/0/y_sort_origin = 35
@@ -907,12 +910,13 @@ physics_layer_0/collision_layer = 1
 sources/7 = SubResource("TileSetAtlasSource_4i44k")
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_jepr1")
 
 [node name="Map" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.43134, 0.43134, 0.43134, 1)
 position = Vector2(1024, 1024)
-texture = ExtResource("1_pwo7u")
+texture = ExtResource("1_fsft0")
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_l16ji")
@@ -921,6 +925,7 @@ layer_0/tile_data = PackedInt32Array(1179666, 65536, 1, 1114130, 0, 3, 1048594, 
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1640, 1640)
+zoom = Vector2(6, 6)
 position_smoothing_enabled = true
 
 [node name="YSort" type="Node2D" parent="."]
@@ -933,7 +938,10 @@ format = 2
 layer_0/y_sort_enabled = true
 layer_0/tile_data = PackedInt32Array(11468989, 7, 0, 10158262, 7, 0, 9896066, 7, 0, 8323221, 7, 0, 7078013, 7, 0, 6488201, 7, 0, 7012522, 7, 0, 12255393, 7, 0, 7274574, 7, 0, 7012390, 7, 0, 12779733, 7, 0, 14090369, 7, 0, 5177493, 7, 0, 3145874, 7, 0, 2293886, 7, 0, 3342405, 7, 0, 4390994, 7, 0, 4718630, 7, 0, 7340238, 65543, 0, 7012590, 65543, 0, 10420457, 65543, 0, 6488258, 65543, 0, 4915406, 65543, 0, 3604662, 65543, 0, 7536705, 131079, 0, 9175089, 131079, 0, 8454173, 131079, 0, 5701654, 131079, 0, 3670248, 196615, 0, 983144, 196615, 0, 589895, 196615, 0, 10289169, 196615, 0, 15401100, 196615, 0)
 
-[node name="Player" parent="YSort" instance=ExtResource("1_valls")]
+[node name="Babara" parent="YSort" instance=ExtResource("5_b5tb8")]
+position = Vector2(1482, 1640)
+
+[node name="Player" parent="YSort" instance=ExtResource("4_feyg5")]
 position = Vector2(1640, 1640)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]

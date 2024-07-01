@@ -346,6 +346,8 @@ states/Start/position = Vector2(172.5, 89.5)
 transitions = ["Idle", "Run", SubResource("AnimationNodeStateMachineTransition_rtuti"), "Run", "Idle", SubResource("AnimationNodeStateMachineTransition_ag84w"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_1trnr")]
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_e25pq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -370,3 +372,6 @@ tree_root = SubResource("AnimationNodeStateMachine_ylqvo")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = Vector2(2.08165e-12, 2.08165e-12)
 parameters/Run/blend_position = Vector2(2.08165e-12, 2.08165e-12)
+
+[node name="Head" type="Marker2D" parent="."]
+position = Vector2(6, -22)
