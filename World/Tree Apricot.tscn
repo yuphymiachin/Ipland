@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cna25sufx3cnd"]
+
+[ext_resource type="Texture2D" uid="uid://r60eritg6jw2" path="res://World/Tree Apricot.png" id="1_ocdah"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ce5q"]
+height = 28.0
+
+[node name="Tree" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+texture = ExtResource("1_ocdah")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_0ce5q")
