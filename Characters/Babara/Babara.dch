@@ -2,18 +2,28 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 "_translation_id": "",
-"color": Color(0.175781, 0.175781, 0.175781, 1),
+"color": Color(0.980469, 0.980469, 0.980469, 1),
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "Default",
 "description": "",
 "display_name": "芭芭拉",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"Default": {
+"export_overrides": {
+"image": "\"res://Characters/Babara/BabaraPortrait.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }

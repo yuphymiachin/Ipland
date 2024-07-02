@@ -28,9 +28,10 @@ directories/dch_directory={
 directories/dtl_directory={
 "intro": "res://Characters/Babara/intro.dtl"
 }
-layout/style_list=["res://Characters/Style.tres"]
-layout/default_style="res://Characters/Style.tres"
+layout/style_list=["res://Characters/DialogueStyle.tres"]
+layout/default_style="res://Characters/DialogueStyle.tres"
 glossary/default_case_sensitive=true
+variables={}
 
 [display]
 

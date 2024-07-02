@@ -18,9 +18,7 @@ func _on_interactable_body_entered(body):
 	if Dialogic.current_timeline != null:
 		return
 
-	var layout = Dialogic.start("res://Characters/Babara/intro.dtl")
-	layout.register_character(load("res://Characters/Babara/Babara.dch"), self.get_node("Head"))
-	layout.register_character(load("res://Characters/Player.dch"), player.get_node("Head"))
+	Dialogic.start("res://Characters/Babara/intro.dtl")
 
 
 func _on_interactable_body_exited(body):
