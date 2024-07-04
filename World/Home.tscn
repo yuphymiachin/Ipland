@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://pbqgfeskvh5t"]
+
+[ext_resource type="Texture2D" uid="uid://dn1cx3hxpbmqq" path="res://World/Buildings.png" id="1_twggf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0lese"]
+size = Vector2(60, 16)
+
+[node name="Home" type="StaticBody2D"]
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_twggf")
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 31)
+shape = SubResource("RectangleShape2D_0lese")

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtscgq4n0tb5d"]
+
+[ext_resource type="Script" path="res://World/Fruit.gd" id="1_hfaoh"]
+[ext_resource type="Texture2D" uid="uid://cifjw6rlh3td0" path="res://icon.svg" id="1_ic47t"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_el8ix"]
+radius = 360.0
+height = 960.0
+
+[node name="Fruit" type="Area2D"]
+scale = Vector2(0.15, 0.15)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_hfaoh")
+metadata/display_name = "FruitName"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 220)
+shape = SubResource("CapsuleShape2D_el8ix")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ic47t")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

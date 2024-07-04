@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://wo2cn2npwacl"]
+
+[ext_resource type="PackedScene" uid="uid://cna25sufx3cnd" path="res://World/TreeBase.tscn" id="1_ktgrc"]
+[ext_resource type="PackedScene" uid="uid://dtscgq4n0tb5d" path="res://World/Fruit.tscn" id="2_q64gi"]
+
+[node name="AppleTree" type="Node2D"]
+
+[node name="TreeBase" parent="." instance=ExtResource("1_ktgrc")]
+
+[node name="TreeSprite" parent="TreeBase" index="0"]
+frame = 0
+
+[node name="Fruit" parent="." instance=ExtResource("2_q64gi")]
+position = Vector2(1, -78)
+metadata/display_name = "Apple"
+
+[node name="Fruit2" parent="." instance=ExtResource("2_q64gi")]
+position = Vector2(-18, -53)
+metadata/display_name = "Apple"
+
+[node name="Fruit3" parent="." instance=ExtResource("2_q64gi")]
+position = Vector2(23, -54)
+metadata/display_name = "Apple"
+
+[editable path="TreeBase"]

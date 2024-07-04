@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://d7voc7j1xedr"]
+
+[ext_resource type="PackedScene" uid="uid://cna25sufx3cnd" path="res://World/TreeBase.tscn" id="1_aqu12"]
+
+[node name="SakuraTree" type="Node2D"]
+
+[node name="TreeBase" parent="." instance=ExtResource("1_aqu12")]
+
+[node name="TreeSprite" parent="TreeBase" index="0"]
+frame = 1
+
+[editable path="TreeBase"]

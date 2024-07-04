@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5moj3vtntmsg"]
+
+[ext_resource type="PackedScene" uid="uid://cna25sufx3cnd" path="res://World/TreeBase.tscn" id="1_rhhpo"]
+[ext_resource type="PackedScene" uid="uid://dtscgq4n0tb5d" path="res://World/Fruit.tscn" id="2_mvyeu"]
+
+[node name="CoffeeTree" type="Node2D"]
+
+[node name="TreeBase" parent="." instance=ExtResource("1_rhhpo")]
+
+[node name="Fruit" parent="." instance=ExtResource("2_mvyeu")]
+position = Vector2(1, -78)
+metadata/display_name = "Coffee Bean"
+
+[node name="Fruit2" parent="." instance=ExtResource("2_mvyeu")]
+position = Vector2(22, -53)
+metadata/display_name = "Coffee Bean"
+
+[node name="Fruit3" parent="." instance=ExtResource("2_mvyeu")]
+position = Vector2(-16, -52)
+metadata/display_name = "Coffee Bean"
+
+[editable path="TreeBase"]
