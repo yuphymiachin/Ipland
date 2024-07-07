@@ -10,6 +10,7 @@ func _ready():
 	Global.remove_selection_option_requested.connect(remove_selection)
 
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

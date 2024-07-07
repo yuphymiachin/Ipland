@@ -1,15 +1,16 @@
-[gd_scene load_steps=14 format=3 uid="uid://ddv4veub13f0a"]
+[gd_scene load_steps=15 format=3 uid="uid://ddv4veub13f0a"]
 
 [ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="1_fsft0"]
 [ext_resource type="Script" path="res://World.gd" id="1_jepr1"]
 [ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_37ve3"]
 [ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="4_feyg5"]
-[ext_resource type="PackedScene" uid="uid://nogkhtqh6xa4" path="res://Characters/Babara/Babara.tscn" id="5_b5tb8"]
+[ext_resource type="PackedScene" uid="uid://nogkhtqh6xa4" path="res://Characters/Babara/Babara Map.tscn" id="5_b5tb8"]
 [ext_resource type="PackedScene" uid="uid://wo2cn2npwacl" path="res://World/AppleTree.tscn" id="7_gj2kl"]
 [ext_resource type="PackedScene" uid="uid://d7voc7j1xedr" path="res://World/SakuraTree.tscn" id="7_uk08s"]
 [ext_resource type="PackedScene" uid="uid://del14yhdovbo1" path="res://World/CoconutTree.tscn" id="8_5au0u"]
 [ext_resource type="PackedScene" uid="uid://c5moj3vtntmsg" path="res://World/CoffeeTree.tscn" id="10_5ah1b"]
 [ext_resource type="PackedScene" uid="uid://cm5ecqycuffyx" path="res://UI/SelectionOptions.tscn" id="10_cs1cc"]
+[ext_resource type="PackedScene" uid="uid://cj1elrasq6icb" path="res://World/Firewood.tscn" id="11_0b3mh"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gc6gg"]
 
@@ -930,3 +931,6 @@ position = Vector2(1604, 1638)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="SelectionOptions" parent="CanvasLayer" instance=ExtResource("10_cs1cc")]
+
+[node name="Firewood" parent="." instance=ExtResource("11_0b3mh")]
+position = Vector2(1676, 1774)

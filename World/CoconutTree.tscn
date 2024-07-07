@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://del14yhdovbo1"]
+[gd_scene load_steps=3 format=3 uid="uid://del14yhdovbo1"]
 
 [ext_resource type="PackedScene" uid="uid://cna25sufx3cnd" path="res://World/TreeBase.tscn" id="1_1ekar"]
+[ext_resource type="PackedScene" uid="uid://dtscgq4n0tb5d" path="res://World/Fruit.tscn" id="2_gk8kx"]
 
 [node name="CoconutTree" type="Node2D"]
 
@@ -13,4 +14,20 @@ frame = 3
 position = Vector2(2.08165e-12, 8.5)
 scale = Vector2(0.66, 0.66)
 
+[node name="Fruit2" parent="." instance=ExtResource("2_gk8kx")]
+position = Vector2(-11, -43)
+metadata/display_name = "Coconut"
+
+[node name="Sprite2D" parent="Fruit2" index="1"]
+frame = 2
+
+[node name="Fruit3" parent="." instance=ExtResource("2_gk8kx")]
+position = Vector2(9, -43)
+metadata/display_name = "Coconut"
+
+[node name="Sprite2D" parent="Fruit3" index="1"]
+frame = 3
+
 [editable path="TreeBase"]
+[editable path="Fruit2"]
+[editable path="Fruit3"]

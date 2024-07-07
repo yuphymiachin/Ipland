@@ -1,5 +1,7 @@
 extends Area2D
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if not visible:
@@ -25,6 +27,8 @@ func handle_button_click():
 	print("Button clicked, setting visible to false, sending remove_selection_option_requested event")
 	deactivate()
 	Global.remove_selection_option_requested.emit(self)
+	# Update inventory
+	Global.add_inventory(get_meta("display_name"), 1)
 
 func deactivate():
 	hide()
