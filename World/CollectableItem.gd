@@ -1,11 +1,23 @@
 extends Area2D
 
+@export var item: Global.Item
+@export var flip_h: bool
 
+var item_sprite_frame_map = {
+	Global.Item.APPLE: 0,
+	Global.Item.COFFEE_BEAN: 1,
+	Global.Item.COCONUT: 2,
+	Global.Item.FIREWOOD: 4,
+}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if not visible:
 		deactivate()
+	get_node("Sprite2D").frame = item_sprite_frame_map[item]
+	if flip_h:
+		get_node("Sprite2D").flip_h = true
+	print(Global.get_item_display_name(item))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -15,7 +27,7 @@ func _process(delta):
 
 func _on_body_entered(body):
 	print("Body entered, sending add_selection_option_requested event")
-	Global.add_selection_option_requested.emit(self, get_meta("display_name"), handle_button_click)
+	Global.add_selection_option_requested.emit(self, Global.get_item_display_name(item), handle_button_click)
 
 
 func _on_body_exited(body):
@@ -28,7 +40,7 @@ func handle_button_click():
 	deactivate()
 	Global.remove_selection_option_requested.emit(self)
 	# Update inventory
-	Global.add_inventory(get_meta("display_name"), 1)
+	Global.add_inventory(item, 1)
 
 func deactivate():
 	hide()

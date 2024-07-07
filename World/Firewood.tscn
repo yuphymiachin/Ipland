@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cj1elrasq6icb"]
 
-[ext_resource type="Script" path="res://World/Fruit.gd" id="1_0ifg6"]
+[ext_resource type="Script" path="res://World/CollectableItem.gd" id="1_jid63"]
 [ext_resource type="Texture2D" uid="uid://iqrpktpht6s1" path="res://World/fruits.png" id="2_fbqm5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_el8ix"]
@@ -11,8 +11,8 @@ height = 253.333
 scale = Vector2(0.15, 0.15)
 collision_layer = 0
 collision_mask = 2
-script = ExtResource("1_0ifg6")
-metadata/display_name = "Firewood"
+script = ExtResource("1_jid63")
+item = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_el8ix")

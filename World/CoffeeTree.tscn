@@ -1,29 +1,29 @@
 [gd_scene load_steps=3 format=3 uid="uid://c5moj3vtntmsg"]
 
 [ext_resource type="PackedScene" uid="uid://cna25sufx3cnd" path="res://World/TreeBase.tscn" id="1_rhhpo"]
-[ext_resource type="PackedScene" uid="uid://dtscgq4n0tb5d" path="res://World/Fruit.tscn" id="2_mvyeu"]
+[ext_resource type="PackedScene" uid="uid://dtscgq4n0tb5d" path="res://World/CollectableItem.tscn" id="2_hlj8n"]
 
 [node name="CoffeeTree" type="Node2D"]
 
 [node name="TreeBase" parent="." instance=ExtResource("1_rhhpo")]
 
-[node name="Fruit" parent="." instance=ExtResource("2_mvyeu")]
+[node name="Fruit" parent="." instance=ExtResource("2_hlj8n")]
 position = Vector2(3, -77)
-metadata/display_name = "Coffee Bean"
+item = 1
 
 [node name="Sprite2D" parent="Fruit" index="1"]
 frame = 1
 
-[node name="Fruit2" parent="." instance=ExtResource("2_mvyeu")]
+[node name="Fruit2" parent="." instance=ExtResource("2_hlj8n")]
 position = Vector2(-18, -52)
-metadata/display_name = "Coffee Bean"
+item = 1
 
 [node name="Sprite2D" parent="Fruit2" index="1"]
 frame = 1
 
-[node name="Fruit3" parent="." instance=ExtResource("2_mvyeu")]
+[node name="Fruit3" parent="." instance=ExtResource("2_hlj8n")]
 position = Vector2(21, -52)
-metadata/display_name = "Coffee Bean"
+item = 1
 
 [node name="Sprite2D" parent="Fruit3" index="1"]
 frame = 1
