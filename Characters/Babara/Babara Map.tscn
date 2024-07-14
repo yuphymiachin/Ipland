@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://nogkhtqh6xa4"]
 
 [ext_resource type="Script" path="res://Characters/Babara/Babara.gd" id="1_10mxw"]
-[ext_resource type="Texture2D" uid="uid://c3d2r4bwe8dew" path="res://Characters/Babara/Babara Map.png" id="2_ho048"]
+[ext_resource type="Texture2D" uid="uid://dd2pjak0f43si" path="res://Characters/Babara/Babara Pixel.png" id="2_4nnd8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0smij"]
 radius = 25.02
@@ -53,7 +53,7 @@ collision_mask = 0
 script = ExtResource("1_10mxw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_ho048")
+texture = ExtResource("2_4nnd8")
 offset = Vector2(0, -26.89)
 hframes = 6
 frame = 1

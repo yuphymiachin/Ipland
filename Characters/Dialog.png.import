@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://r2xayb34s0sr"
-path="res://.godot/imported/Tents.png-6109eea0c51546a3eb6b13c11786b9d8.ctex"
+uid="uid://b44wnvmnlgwqo"
+path="res://.godot/imported/Dialog.png-561713d1ea0fa1cfc6061935b2676221.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/Tents.png"
-dest_files=["res://.godot/imported/Tents.png-6109eea0c51546a3eb6b13c11786b9d8.ctex"]
+source_file="res://Characters/Dialog.png"
+dest_files=["res://.godot/imported/Dialog.png-561713d1ea0fa1cfc6061935b2676221.ctex"]
 
 [params]
 

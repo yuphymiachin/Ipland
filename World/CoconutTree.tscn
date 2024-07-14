@@ -26,6 +26,9 @@ position = Vector2(9, -43)
 item = 2
 flip_h = true
 
+[node name="Sprite2D" parent="Fruit3" index="1"]
+frame = 3
+
 [editable path="TreeBase"]
 [editable path="Fruit2"]
 [editable path="Fruit3"]

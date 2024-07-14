@@ -17,7 +17,6 @@ func _ready():
 	get_node("Sprite2D").frame = item_sprite_frame_map[item]
 	if flip_h:
 		get_node("Sprite2D").flip_h = true
-	print(Global.get_item_display_name(item))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

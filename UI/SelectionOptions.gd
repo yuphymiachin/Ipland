@@ -10,10 +10,10 @@ func _ready():
 	Global.remove_selection_option_requested.connect(remove_selection)
 
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if Input.is_action_just_pressed("ui_accept"):
+		if get_node("Container").get_child_count() > 0:
+			get_node("Container").get_child(0).emit_signal("pressed")
 
 
 func _on_texture_button_pressed():

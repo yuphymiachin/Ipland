@@ -17,12 +17,12 @@
 "portraits": {
 "Default": {
 "export_overrides": {
-"image": "\"res://Characters/Babara/BabaraPortrait.png\""
+"image": "\"\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
+"scene": "res://Characters/Babara/Babara.tscn"
 }
 },
 "scale": 1.0

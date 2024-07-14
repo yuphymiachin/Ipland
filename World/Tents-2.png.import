@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3d2r4bwe8dew"
-path="res://.godot/imported/Babara Map.png-5f6246bac48fc08494508193abce3974.ctex"
+uid="uid://bxk8b1ax8bakb"
+path="res://.godot/imported/Tents-2.png-3e03846a3758994a68115e62ed6e89da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Babara/Babara Map.png"
-dest_files=["res://.godot/imported/Babara Map.png-5f6246bac48fc08494508193abce3974.ctex"]
+source_file="res://World/Tents-2.png"
+dest_files=["res://.godot/imported/Tents-2.png-3e03846a3758994a68115e62ed6e89da.ctex"]
 
 [params]
 

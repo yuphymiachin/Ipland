@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cna25sufx3cnd"]
 
-[ext_resource type="Texture2D" uid="uid://c71otp6t6h210" path="res://World/Trees.png" id="1_xp1w6"]
+[ext_resource type="Texture2D" uid="uid://dxqqle1gxrm1x" path="res://World/trees.png" id="1_j3027"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ce5q"]
 radius = 6.0
@@ -11,7 +11,7 @@ collision_mask = 0
 
 [node name="TreeSprite" type="Sprite2D" parent="."]
 position = Vector2(0, -39)
-texture = ExtResource("1_xp1w6")
+texture = ExtResource("1_j3027")
 hframes = 4
 frame = 2
 

@@ -1,8 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://dga8360lnfpo7"]
+[gd_scene load_steps=13 format=3 uid="uid://dga8360lnfpo7"]
 
-[ext_resource type="Texture2D" uid="uid://yu2g7xacgwf5" path="res://World/ShopInterior.png" id="1_e6w7n"]
 [ext_resource type="Script" path="res://World/ShopInterior.gd" id="1_wil20"]
 [ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="2_k0dj5"]
+[ext_resource type="Texture2D" uid="uid://dnf7enmsnosto" path="res://World/Shop-2-2.png" id="2_o1d1q"]
 [ext_resource type="PackedScene" uid="uid://cwrxv3r0fo22m" path="res://World/AppleStock.tscn" id="3_d3dvs"]
 [ext_resource type="PackedScene" uid="uid://c1wpktubk3rkm" path="res://World/FireWoodStock.tscn" id="4_m3ihx"]
 [ext_resource type="PackedScene" uid="uid://c5wr4wiq41l3q" path="res://World/CoconutStock.tscn" id="5_cc1ye"]
@@ -11,14 +11,17 @@
 [ext_resource type="PackedScene" uid="uid://cm5ecqycuffyx" path="res://UI/SelectionOptions.tscn" id="10_4pnvv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xwry0"]
-size = Vector2(75, 20)
+size = Vector2(75, 23)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8y1y7"]
 font = ExtResource("7_8jx8s")
 font_size = 8
-font_color = Color(0.452367, 0.334423, 0.478363, 1)
+font_color = Color(0.482353, 0.317647, 0.192157, 1)
 
-[node name="Shop" type="StaticBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4wxqp"]
+size = Vector2(66, 10)
+
+[node name="ShopInterior" type="StaticBody2D"]
 position = Vector2(960, 540)
 collision_mask = 0
 script = ExtResource("1_wil20")
@@ -30,34 +33,20 @@ polygon = PackedVector2Array(-202, -114, -202, 133, -45.0001, 133, -45.0001, 81,
 polygon = PackedVector2Array(-125, 13, -125, 45, -160, 45, -160, 78, -125, 78, -125, 108, -101, 108, -101, 78, -68.0001, 78, -65.0001, 45, -101, 45, -101, 13)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-11, 123)
+position = Vector2(-11, 121.5)
 shape = SubResource("RectangleShape2D_xwry0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-17, 102)
+position = Vector2(-11, 96)
 zoom = Vector2(5, 5)
 position_smoothing_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_e6w7n")
+position = Vector2(0, 86)
+texture = ExtResource("2_o1d1q")
 
 [node name="AppleStock" parent="." instance=ExtResource("3_d3dvs")]
 position = Vector2(-129.167, -29)
-
-[node name="FireWoodStock" parent="." instance=ExtResource("4_m3ihx")]
-position = Vector2(-74.167, -29)
-
-[node name="CoconutStock" parent="." instance=ExtResource("5_cc1ye")]
-position = Vector2(-17.083, -29)
-
-[node name="CoffeBeanStock" parent="." instance=ExtResource("6_ngggb")]
-position = Vector2(42.083, -29)
-
-[node name="Player" parent="." instance=ExtResource("2_k0dj5")]
-position = Vector2(-17, 102)
-
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
-remote_path = NodePath("../../Camera2D")
 
 [node name="AppleNumber" type="Label" parent="."]
 offset_left = -122.0
@@ -68,23 +57,32 @@ scale = Vector2(0.7, 0.7)
 text = "x6"
 label_settings = SubResource("LabelSettings_8y1y7")
 
+[node name="FireWoodStock" parent="." instance=ExtResource("4_m3ihx")]
+position = Vector2(-74.167, -29)
+
 [node name="FirewoodNumber" type="Label" parent="."]
 offset_left = -63.28
-offset_top = -29.0
+offset_top = -30.44
 offset_right = -39.2801
-offset_bottom = -20.0
+offset_bottom = -21.44
 scale = Vector2(0.7, 0.7)
 text = "x4"
 label_settings = SubResource("LabelSettings_8y1y7")
 
+[node name="CoconutStock" parent="." instance=ExtResource("5_cc1ye")]
+position = Vector2(-17.083, -29)
+
 [node name="CoconutNumber" type="Label" parent="."]
 offset_left = -7.37
-offset_top = -29.0
+offset_top = -30.44
 offset_right = 16.6299
-offset_bottom = -20.0
+offset_bottom = -21.44
 scale = Vector2(0.7, 0.7)
 text = "x4"
 label_settings = SubResource("LabelSettings_8y1y7")
+
+[node name="CoffeBeanStock" parent="." instance=ExtResource("6_ngggb")]
+position = Vector2(42.083, -29)
 
 [node name="CoffeeBeanNumber" type="Label" parent="."]
 offset_left = 49.28
@@ -95,10 +93,28 @@ scale = Vector2(0.7, 0.7)
 text = "x4"
 label_settings = SubResource("LabelSettings_8y1y7")
 
+[node name="Player" parent="." instance=ExtResource("2_k0dj5")]
+position = Vector2(-11, 96)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Camera2D")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="SelectionOptions" parent="CanvasLayer" instance=ExtResource("10_4pnvv")]
 offset_left = 16.0
-offset_top = 183.0
+offset_top = 162.0
 offset_right = 16.0
-offset_bottom = 183.0
+offset_bottom = 162.0
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-11, 104)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 2)
+shape = SubResource("RectangleShape2D_4wxqp")
+debug_color = Color(0.871799, 0.226102, 0.664138, 0.42)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

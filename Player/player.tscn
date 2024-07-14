@@ -339,7 +339,7 @@ advance_mode = 2
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_ylqvo"]
 states/End/position = Vector2(900, 100.25)
 states/Idle/node = SubResource("AnimationNodeBlendSpace2D_aj8bl")
-states/Idle/position = Vector2(431.5, 100.344)
+states/Idle/position = Vector2(433, 100.344)
 states/Run/node = SubResource("AnimationNodeBlendSpace2D_hb5bn")
 states/Run/position = Vector2(687.5, 100.438)
 states/Start/position = Vector2(172.5, 89.5)
@@ -370,7 +370,7 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_ylqvo")
 anim_player = NodePath("../AnimationPlayer")
-parameters/Idle/blend_position = Vector2(2.08165e-12, 2.08165e-12)
+parameters/Idle/blend_position = Vector2(2.08165e-12, -1)
 parameters/Run/blend_position = Vector2(2.08165e-12, 2.08165e-12)
 
 [node name="Head" type="Marker2D" parent="."]
