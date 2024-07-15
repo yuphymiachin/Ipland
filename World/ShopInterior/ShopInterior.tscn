@@ -1,6 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://dga8360lnfpo7"]
+[gd_scene load_steps=14 format=3 uid="uid://dga8360lnfpo7"]
 
-[ext_resource type="Script" path="res://World/ShopInterior.gd" id="1_wil20"]
+[ext_resource type="Script" path="res://World/ShopInterior/ShopInterior.gd" id="1_wil20"]
 [ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="2_k0dj5"]
 [ext_resource type="Texture2D" uid="uid://dnf7enmsnosto" path="res://World/Shop-2-2.png" id="2_o1d1q"]
 [ext_resource type="PackedScene" uid="uid://cwrxv3r0fo22m" path="res://World/AppleStock.tscn" id="3_d3dvs"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://0ui05v707s3w" path="res://World/CoffeBeanStock.tscn" id="6_ngggb"]
 [ext_resource type="FontFile" uid="uid://vkb450fidlx8" path="res://UI/Font/pixel_operator/PixelOperatorMono8-Bold.ttf" id="7_8jx8s"]
 [ext_resource type="PackedScene" uid="uid://cm5ecqycuffyx" path="res://UI/SelectionOptions.tscn" id="10_4pnvv"]
+[ext_resource type="PackedScene" uid="uid://se5ihdeoea6m" path="res://World/Utils/Teleporter.tscn" id="10_e78eb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xwry0"]
 size = Vector2(75, 23)
@@ -107,14 +108,16 @@ offset_top = 162.0
 offset_right = 16.0
 offset_bottom = 162.0
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(-11, 104)
-collision_layer = 0
-collision_mask = 2
+[node name="EntryPoint" type="Marker2D" parent="." groups=["entry_points"]]
+position = Vector2(-11, 96)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-1, 2)
+[node name="Teleporter" parent="." instance=ExtResource("10_e78eb")]
+position = Vector2(-11, 99)
+path = "res://World/World.tscn"
+entry_point = "ShopExit"
+auto_teleport = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Teleporter"]
+position = Vector2(-1, 7)
 shape = SubResource("RectangleShape2D_4wxqp")
 debug_color = Color(0.871799, 0.226102, 0.664138, 0.42)
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Ipland"
-run/main_scene="res://World.tscn"
+run/main_scene="res://World/World.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://World/Global.gd"
+Game="*res://Global/Game.tscn"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=46 format=3 uid="uid://4346ywjlkt1n"]
 
-[ext_resource type="Script" path="res://World.gd" id="1_ofr5j"]
+[ext_resource type="Script" path="res://World/World.gd" id="1_ofr5j"]
 [ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_vjf87"]
 [ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="3_1t554"]
 [ext_resource type="PackedScene" uid="uid://nogkhtqh6xa4" path="res://Characters/Babara/Babara Map.tscn" id="4_5jv1t"]

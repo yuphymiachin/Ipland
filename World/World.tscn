@@ -1,27 +1,27 @@
 [gd_scene load_steps=21 format=3 uid="uid://ddv4veub13f0a"]
 
-[ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="1_fsft0"]
-[ext_resource type="Script" path="res://World.gd" id="1_jepr1"]
-[ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_37ve3"]
-[ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="4_feyg5"]
-[ext_resource type="PackedScene" uid="uid://0hunlpvklkta" path="res://World/Tent.tscn" id="5_alv0t"]
-[ext_resource type="PackedScene" uid="uid://nogkhtqh6xa4" path="res://Characters/Babara/Babara Map.tscn" id="5_b5tb8"]
-[ext_resource type="PackedScene" uid="uid://fvb0wj3oqvri" path="res://World/Shop.tscn" id="6_hmrny"]
-[ext_resource type="PackedScene" uid="uid://wo2cn2npwacl" path="res://World/AppleTree.tscn" id="7_gj2kl"]
-[ext_resource type="PackedScene" uid="uid://pbqgfeskvh5t" path="res://World/Home.tscn" id="7_pmi41"]
-[ext_resource type="PackedScene" uid="uid://d7voc7j1xedr" path="res://World/SakuraTree.tscn" id="7_uk08s"]
-[ext_resource type="PackedScene" uid="uid://del14yhdovbo1" path="res://World/CoconutTree.tscn" id="8_5au0u"]
-[ext_resource type="PackedScene" uid="uid://c5moj3vtntmsg" path="res://World/CoffeeTree.tscn" id="10_5ah1b"]
-[ext_resource type="PackedScene" uid="uid://cm5ecqycuffyx" path="res://UI/SelectionOptions.tscn" id="10_cs1cc"]
-[ext_resource type="PackedScene" uid="uid://cj1elrasq6icb" path="res://World/Firewood.tscn" id="11_0b3mh"]
-[ext_resource type="PackedScene" uid="uid://c467uvqho2f4e" path="res://World/Trailer.tscn" id="15_m2e04"]
-[ext_resource type="PackedScene" uid="uid://bi8h5cotw6pui" path="res://World/SpeedBoat.tscn" id="16_rqvpu"]
-[ext_resource type="PackedScene" uid="uid://mhg88bmqfyev" path="res://World/HouseBoat.tscn" id="17_ru0td"]
+[ext_resource type="Script" path="res://World/World.gd" id="1_i2qi5"]
+[ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_ru50b"]
+[ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="3_dxisw"]
+[ext_resource type="PackedScene" uid="uid://nogkhtqh6xa4" path="res://Characters/Babara/Babara Map.tscn" id="4_k6ak4"]
+[ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="5_4bvsm"]
+[ext_resource type="PackedScene" uid="uid://fvb0wj3oqvri" path="res://World/Shop.tscn" id="6_2e1md"]
+[ext_resource type="PackedScene" uid="uid://pbqgfeskvh5t" path="res://World/Home.tscn" id="7_njx0r"]
+[ext_resource type="PackedScene" uid="uid://0hunlpvklkta" path="res://World/Tent.tscn" id="8_5gi03"]
+[ext_resource type="PackedScene" uid="uid://c467uvqho2f4e" path="res://World/Trailer.tscn" id="9_fjsfn"]
+[ext_resource type="PackedScene" uid="uid://bi8h5cotw6pui" path="res://World/SpeedBoat.tscn" id="10_am7jm"]
+[ext_resource type="PackedScene" uid="uid://mhg88bmqfyev" path="res://World/HouseBoat.tscn" id="11_6hjim"]
+[ext_resource type="PackedScene" uid="uid://c5moj3vtntmsg" path="res://World/CoffeeTree.tscn" id="12_agblf"]
+[ext_resource type="PackedScene" uid="uid://d7voc7j1xedr" path="res://World/SakuraTree.tscn" id="13_o0uyj"]
+[ext_resource type="PackedScene" uid="uid://del14yhdovbo1" path="res://World/CoconutTree.tscn" id="14_0vvly"]
+[ext_resource type="PackedScene" uid="uid://wo2cn2npwacl" path="res://World/AppleTree.tscn" id="15_hxabf"]
+[ext_resource type="PackedScene" uid="uid://cj1elrasq6icb" path="res://World/Firewood.tscn" id="16_1wiep"]
+[ext_resource type="PackedScene" uid="uid://cm5ecqycuffyx" path="res://UI/SelectionOptions.tscn" id="17_ckqge"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gc6gg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t1bbp"]
-texture = ExtResource("2_37ve3")
+texture = ExtResource("2_ru50b")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/terrain_set = 0
@@ -892,7 +892,7 @@ terrain_set_0/terrain_3/color = Color(0.419608, 0.956863, 0.192157, 1)
 sources/0 = SubResource("TileSetAtlasSource_t1bbp")
 
 [node name="World" type="Node2D"]
-script = ExtResource("1_jepr1")
+script = ExtResource("1_i2qi5")
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_l16ji")
@@ -908,15 +908,15 @@ position_smoothing_enabled = true
 visible = false
 modulate = Color(0.43134, 0.43134, 0.43134, 1)
 position = Vector2(1024, 1024)
-texture = ExtResource("1_fsft0")
+texture = ExtResource("3_dxisw")
 
 [node name="YSort" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="Babara" parent="YSort" instance=ExtResource("5_b5tb8")]
+[node name="Babara" parent="YSort" instance=ExtResource("4_k6ak4")]
 position = Vector2(1841, 1273)
 
-[node name="Player" parent="YSort" instance=ExtResource("4_feyg5")]
+[node name="Player" parent="YSort" instance=ExtResource("5_4bvsm")]
 position = Vector2(513, 1241)
 
 [node name="AnimationTree" parent="YSort/Player" index="3"]
@@ -925,146 +925,149 @@ parameters/Idle/blend_position = Vector2(2.08165e-12, 1)
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
 
-[node name="Shop" parent="YSort" instance=ExtResource("6_hmrny")]
+[node name="Shop" parent="YSort" instance=ExtResource("6_2e1md")]
 position = Vector2(592, 1166)
 
-[node name="Home" parent="YSort" instance=ExtResource("7_pmi41")]
+[node name="Home" parent="YSort" instance=ExtResource("7_njx0r")]
 position = Vector2(1568, 1560)
 
-[node name="Tent" parent="YSort" instance=ExtResource("5_alv0t")]
+[node name="Tent" parent="YSort" instance=ExtResource("8_5gi03")]
 position = Vector2(1516, 1253)
 
-[node name="Tent2" parent="YSort" instance=ExtResource("5_alv0t")]
+[node name="Tent2" parent="YSort" instance=ExtResource("8_5gi03")]
 position = Vector2(1660, 789)
 
-[node name="Trailer" parent="YSort" instance=ExtResource("15_m2e04")]
+[node name="Trailer" parent="YSort" instance=ExtResource("9_fjsfn")]
 position = Vector2(1784, 1187)
 
-[node name="Trailer2" parent="YSort" instance=ExtResource("15_m2e04")]
+[node name="Trailer2" parent="YSort" instance=ExtResource("9_fjsfn")]
 position = Vector2(1199, 1593)
 
-[node name="SpeedBoat" parent="YSort" instance=ExtResource("16_rqvpu")]
+[node name="SpeedBoat" parent="YSort" instance=ExtResource("10_am7jm")]
 position = Vector2(806, 1504)
 
-[node name="SpeedBoat2" parent="YSort" instance=ExtResource("16_rqvpu")]
+[node name="SpeedBoat2" parent="YSort" instance=ExtResource("10_am7jm")]
 position = Vector2(1315, 993)
 
-[node name="HouseBoat" parent="YSort" instance=ExtResource("17_ru0td")]
+[node name="HouseBoat" parent="YSort" instance=ExtResource("11_6hjim")]
 position = Vector2(1363, 412)
 
-[node name="HouseBoat2" parent="YSort" instance=ExtResource("17_ru0td")]
+[node name="HouseBoat2" parent="YSort" instance=ExtResource("11_6hjim")]
 position = Vector2(397, 867)
 
-[node name="CoffeeTree" parent="YSort" instance=ExtResource("10_5ah1b")]
+[node name="CoffeeTree" parent="YSort" instance=ExtResource("12_agblf")]
 position = Vector2(817, 1289)
 
-[node name="CoffeeTree2" parent="YSort" instance=ExtResource("10_5ah1b")]
+[node name="CoffeeTree2" parent="YSort" instance=ExtResource("12_agblf")]
 position = Vector2(529, 964)
 
-[node name="CoffeeTree3" parent="YSort" instance=ExtResource("10_5ah1b")]
+[node name="CoffeeTree3" parent="YSort" instance=ExtResource("12_agblf")]
 position = Vector2(406, 1163)
 
-[node name="CoffeeTree4" parent="YSort" instance=ExtResource("10_5ah1b")]
+[node name="CoffeeTree4" parent="YSort" instance=ExtResource("12_agblf")]
 position = Vector2(237, 1054)
 
-[node name="CoffeeTree5" parent="YSort" instance=ExtResource("10_5ah1b")]
+[node name="CoffeeTree5" parent="YSort" instance=ExtResource("12_agblf")]
 position = Vector2(178, 734)
 
-[node name="SakuraTree" parent="YSort" instance=ExtResource("7_uk08s")]
+[node name="SakuraTree" parent="YSort" instance=ExtResource("13_o0uyj")]
 position = Vector2(1877, 1269)
 
-[node name="SakuraTree2" parent="YSort" instance=ExtResource("7_uk08s")]
+[node name="SakuraTree2" parent="YSort" instance=ExtResource("13_o0uyj")]
 position = Vector2(1901, 911)
 
-[node name="SakuraTree3" parent="YSort" instance=ExtResource("7_uk08s")]
+[node name="SakuraTree3" parent="YSort" instance=ExtResource("13_o0uyj")]
 position = Vector2(1651, 935)
 
-[node name="SakuraTree4" parent="YSort" instance=ExtResource("7_uk08s")]
+[node name="SakuraTree4" parent="YSort" instance=ExtResource("13_o0uyj")]
 position = Vector2(1550, 835)
 
-[node name="SakuraTree5" parent="YSort" instance=ExtResource("7_uk08s")]
+[node name="SakuraTree5" parent="YSort" instance=ExtResource("13_o0uyj")]
 position = Vector2(1649, 648)
 
-[node name="SakuraTree6" parent="YSort" instance=ExtResource("7_uk08s")]
+[node name="SakuraTree6" parent="YSort" instance=ExtResource("13_o0uyj")]
 position = Vector2(1456, 484)
 
-[node name="CoconutTree" parent="YSort" instance=ExtResource("8_5au0u")]
+[node name="CoconutTree" parent="YSort" instance=ExtResource("14_0vvly")]
 position = Vector2(1133, 1920)
 
-[node name="CoconutTree3" parent="YSort" instance=ExtResource("8_5au0u")]
+[node name="CoconutTree3" parent="YSort" instance=ExtResource("14_0vvly")]
 position = Vector2(1890, 1624)
 
-[node name="CoconutTree4" parent="YSort" instance=ExtResource("8_5au0u")]
+[node name="CoconutTree4" parent="YSort" instance=ExtResource("14_0vvly")]
 position = Vector2(1913, 590)
 
-[node name="CoconutTree5" parent="YSort" instance=ExtResource("8_5au0u")]
+[node name="CoconutTree5" parent="YSort" instance=ExtResource("14_0vvly")]
 position = Vector2(835, 70)
 
-[node name="CoconutTree6" parent="YSort" instance=ExtResource("8_5au0u")]
+[node name="CoconutTree6" parent="YSort" instance=ExtResource("14_0vvly")]
 position = Vector2(510, 204)
 
-[node name="CoconutTree2" parent="YSort" instance=ExtResource("8_5au0u")]
+[node name="CoconutTree2" parent="YSort" instance=ExtResource("14_0vvly")]
 position = Vector2(138, 1245)
 
-[node name="AppleTree" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1712, 1606)
 
-[node name="AppleTree2" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree2" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1521, 1447)
 
-[node name="AppleTree3" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree3" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1457, 1291)
 
-[node name="AppleTree4" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree4" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1296, 1545)
 
-[node name="AppleTree5" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree5" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1040, 1767)
 
-[node name="AppleTree6" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree6" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1039, 1255)
 
-[node name="AppleTree7" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree7" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1194, 1051)
 
-[node name="AppleTree8" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree8" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1008, 900)
 
-[node name="AppleTree9" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree9" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1110, 829)
 
-[node name="AppleTree10" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree10" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1366, 893)
 
-[node name="AppleTree11" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree11" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1202, 668)
 
-[node name="AppleTree12" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree12" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(625, 925)
 
-[node name="AppleTree13" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree13" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(304, 902)
 
-[node name="AppleTree14" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree14" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(301, 615)
 
-[node name="AppleTree15" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree15" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(656, 578)
 
-[node name="AppleTree16" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree16" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(556, 445)
 
-[node name="AppleTree17" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree17" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1008, 321)
 
-[node name="AppleTree18" parent="YSort" instance=ExtResource("7_gj2kl")]
+[node name="AppleTree18" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1172, 420)
 
-[node name="Firewood" parent="YSort" instance=ExtResource("11_0b3mh")]
+[node name="Firewood" parent="YSort" instance=ExtResource("16_1wiep")]
 position = Vector2(1676, 1774)
+
+[node name="ShopExit" type="Marker2D" parent="YSort" groups=["entry_points"]]
+position = Vector2(591, 1217)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="SelectionOptions" parent="CanvasLayer" instance=ExtResource("10_cs1cc")]
+[node name="SelectionOptions" parent="CanvasLayer" instance=ExtResource("17_ckqge")]
 
 [editable path="YSort/Player"]
