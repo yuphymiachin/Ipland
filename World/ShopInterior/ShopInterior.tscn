@@ -23,7 +23,6 @@ font_color = Color(0.482353, 0.317647, 0.192157, 1)
 size = Vector2(66, 10)
 
 [node name="ShopInterior" type="StaticBody2D"]
-position = Vector2(960, 540)
 collision_mask = 0
 script = ExtResource("1_wil20")
 
@@ -36,11 +35,6 @@ polygon = PackedVector2Array(-125, 13, -125, 45, -160, 45, -160, 78, -125, 78, -
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-11, 121.5)
 shape = SubResource("RectangleShape2D_xwry0")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-11, 96)
-zoom = Vector2(5, 5)
-position_smoothing_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 86)
@@ -110,6 +104,16 @@ offset_bottom = 162.0
 
 [node name="EntryPoint" type="Marker2D" parent="." groups=["entry_points"]]
 position = Vector2(-11, 96)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-11, 96)
+zoom = Vector2(5, 5)
+limit_left = -185
+limit_top = -115
+limit_right = 190
+limit_bottom = 111
+position_smoothing_enabled = true
+editor_draw_limits = true
 
 [node name="Teleporter" parent="." instance=ExtResource("10_e78eb")]
 position = Vector2(-11, 99)
