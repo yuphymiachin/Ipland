@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://World/World.gd" id="1_ofr5j"]
 [ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_vjf87"]
 [ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="3_1t554"]
-[ext_resource type="PackedScene" uid="uid://nogkhtqh6xa4" path="res://Characters/Babara/Barbara Pixel.tscn" id="4_5jv1t"]
+[ext_resource type="PackedScene" uid="uid://nogkhtqh6xa4" path="res://Characters/Barbara/Barbara Pixel.tscn" id="4_5jv1t"]
 [ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="6_0jkna"]
 [ext_resource type="PackedScene" uid="uid://fvb0wj3oqvri" path="res://World/Shop.tscn" id="9_kx83s"]
 [ext_resource type="PackedScene" uid="uid://pbqgfeskvh5t" path="res://World/Home.tscn" id="11_foqds"]

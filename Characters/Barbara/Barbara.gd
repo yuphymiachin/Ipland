@@ -16,7 +16,7 @@ func _on_interactable_body_entered(body):
 	if Dialogic.current_timeline != null:
 		return
 
-	Dialogic.start("res://Characters/Babara/intro.dtl")
+	Dialogic.start("res://Characters/Babara/BarbaraIntro.dtl")
 
 
 func _on_interactable_body_exited(body):

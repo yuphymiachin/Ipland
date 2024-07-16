@@ -24,12 +24,12 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Babara": "res://Characters/Babara/Barbara.dch",
+"Babara": "res://Characters/Barbara/Barbara.dch",
 "Player": "res://Characters/Player.dch"
 }
 directories/dtl_directory={
-"BabaraDialog 01": "res://Characters/Babara/BabaraDialog.dtl",
-"intro": "res://Characters/Babara/BarbaraIntro.dtl"
+"BabaraDialog 01": "res://Characters/Barbara/BarbaraDialog.dtl",
+"intro": "res://Characters/Barbara/BarbaraIntro.dtl"
 }
 layout/style_list=["res://Characters/DialogueStyle.tres"]
 layout/default_style="res://Characters/DialogueStyle.tres"

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://c5wr4wiq41l3q"]
 
-[ext_resource type="Script" path="res://Characters/Babara/Barbara.gd" id="1_mc2bd"]
+[ext_resource type="Script" path="res://Characters/Barbara/Barbara.gd" id="1_mc2bd"]
 [ext_resource type="Texture2D" uid="uid://cawwv7lyabdcx" path="res://World/ShopInterior/ShopGoods.png" id="2_fsgxc"]
 
 [sub_resource type="Animation" id="Animation_eql3k"]
