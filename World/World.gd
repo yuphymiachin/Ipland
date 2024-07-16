@@ -39,4 +39,4 @@ func from_dict(dict: Dictionary) -> void:
 	for node in get_tree().get_nodes_in_group("collectable_items"):
 		var path := get_path_to(node)
 		if path in dict["invisible_collectable_items"]:
-			node.hide()
+			node.deactivate()
