@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://nogkhtqh6xa4"]
 
-[ext_resource type="Script" path="res://Characters/Babara/Babara.gd" id="1_10mxw"]
-[ext_resource type="Texture2D" uid="uid://dd2pjak0f43si" path="res://Characters/Babara/Babara Pixel.png" id="2_4nnd8"]
+[ext_resource type="Script" path="res://Characters/Babara/Barbara.gd" id="1_10mxw"]
+[ext_resource type="Texture2D" uid="uid://dd2pjak0f43si" path="res://Characters/Babara/Barbara Pixel.png" id="2_4nnd8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0smij"]
 radius = 25.02

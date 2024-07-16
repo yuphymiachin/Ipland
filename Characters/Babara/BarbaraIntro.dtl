@@ -1,6 +1,5 @@
 [background arg="res://Characters/Dialog.png" fade="0.0"]
 join Babara 2 [animation="Bounce In"]
 Babara: Hi, I'm Babara
-- 
 Player: 你好\@^0^@)/
 [end_timeline]

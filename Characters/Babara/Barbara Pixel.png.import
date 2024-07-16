@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddi58sijkvbuh"
-path="res://.godot/imported/Babara.png-4aa0e03f91e3d635099dca270fb0985d.ctex"
+uid="uid://dd2pjak0f43si"
+path="res://.godot/imported/Barbara Pixel.png-8142a1f77946ff3ed84d9078fdd6aca9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Babara/Babara.png"
-dest_files=["res://.godot/imported/Babara.png-4aa0e03f91e3d635099dca270fb0985d.ctex"]
+source_file="res://Characters/Babara/Barbara Pixel.png"
+dest_files=["res://.godot/imported/Barbara Pixel.png-8142a1f77946ff3ed84d9078fdd6aca9.ctex"]
 
 [params]
 

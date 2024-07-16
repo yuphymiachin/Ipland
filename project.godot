@@ -24,16 +24,19 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Babara": "res://Characters/Babara/Babara.dch",
+"Babara": "res://Characters/Babara/Barbara.dch",
 "Player": "res://Characters/Player.dch"
 }
 directories/dtl_directory={
-"intro": "res://Characters/Babara/intro.dtl"
+"BabaraDialog 01": "res://Characters/Babara/BabaraDialog.dtl",
+"intro": "res://Characters/Babara/BarbaraIntro.dtl"
 }
 layout/style_list=["res://Characters/DialogueStyle.tres"]
 layout/default_style="res://Characters/DialogueStyle.tres"
 glossary/default_case_sensitive=true
-variables={}
+variables={
+"player_name": "Land Manager"
+}
 
 [display]
 

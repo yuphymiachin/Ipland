@@ -1,0 +1,52 @@
+[background arg="res://Characters/Dialog.png" fade="0.0"]
+join Babara 2 [animation="Bounce In"]
+Babara: Hi there, {player_name}!
+Babara: Seeing you so full of life puts my mind at rest.
+- Good morning, Barbara.
+	Babara: Morning! May you be blessed with a wonderful day!
+	Babara: I'll prey for you~
+- How do you like it here?
+	Babara: Oh, I love it here!
+	Babara: The scenery here is so different from Mondstadt's. I find it really refreshing.
+	Babara: And, here I can sing at the top of my voice without having to worry if I'm disturbing anyone! It's the best way to practice.
+	- Surely no one would ever consider your sweet voice a disturbance?
+		Babara: Ah...
+		Babara: It sure is nice of you to say that! But, uh... still, I always need to make sure I'm being considerate of other people.
+		Babara: Anyway, I'm really happy to be here!
+		Babara: I think I'd like to stay here a little longer.
+	- That's great!
+		Babara: Yeah... I'm just so happy that you invited me to come here!
+- Would you like to have a chat with me?
+	Babara: Oh, sure!
+	Babara: Hehe...
+	- What's with that smile...
+	- Have you suddenly remembered something amusing?
+	Babara: Oh, I just reslised that I haven't chatted with a friend like this in a long time.
+	Babara: I just feel so blessed all of a sudden.
+	- Seems like you're easy to please.
+		Babara: Uhh... Is that so...
+		Babara: Well, maybe... but it's not such a bad thing.
+		Babara: The easier you find it to receive joy, the more energy you have to share that joy with other people.
+	- It's because you're always putting other people first.
+		Babara: Of course I do, that's what I'm supposed tp do!
+		Babara: I've always had so many people looking out for me. I just want to do all that is within my power tp repay their kindness.
+	Player: You are every bit as wonderful as people say.
+	Babara: Ahh... please, no need to shower me with compliments...
+	Babara: Only with constructive criticism can we grow, right...?
+- Is there anything you'd like to do?
+	Babara: Oh, I've been practicing a new song recently.
+	Babara: But I'm still trying to iron out a few details...
+	Babara: When I repeat the chorus, should I go up a half step? I can't decide... And I think there's room for improvement with the dance routine, but I'm not sure...
+	Babara: If it's no trouble, I'd really appreciate it if you could watch my performance and give me your suggestions.
+	- You have my unconditional support.
+	- It would be my honor.
+	Babara: Thank you...!
+	Babara: Um... Please don't laugh at me if there are parts that still need practicing.
+	Babara: I've thought about this a lot of times in the past, but it's taken me this long to finally pluck up the courage to perform for you at such close distance.
+	Babara: If you laughed at me, there'd be nowhere I could run from my embarrassment...
+	- Don't worry. I won't laugh.
+	- I believe in you, and you should believe in yourself as well.
+	Babara: Whew... Okay.
+	Babara: Then...
+	Babara: Let the show begin!
+[end_timeline]

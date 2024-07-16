@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://d4epetmx1n4pc"]
 
 [ext_resource type="Script" path="res://Characters/CustomPortrait.gd" id="1_h1qw0"]
-[ext_resource type="Texture2D" uid="uid://ddi58sijkvbuh" path="res://Characters/Babara/Babara.png" id="2_4fn6q"]
+[ext_resource type="Texture2D" uid="uid://ddi58sijkvbuh" path="res://Characters/Babara/Barbara.png" id="2_4fn6q"]
 
 [sub_resource type="Animation" id="Animation_eql3k"]
 resource_name = "Idle"
