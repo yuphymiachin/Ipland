@@ -1,3 +1,4 @@
+class_name CollectableItem
 extends Area2D
 
 @export var item: Global.Item
@@ -47,7 +48,7 @@ func deactivate():
 	set_physics_process(false)
 	set_process_unhandled_input(false)
 	set_process_input(false)
-	get_node("CollisionShape2D").disabled = true
+	$CollisionShape2D.disabled = true
 	
 func activate():
 	show()
@@ -55,4 +56,4 @@ func activate():
 	set_physics_process(true)
 	set_process_unhandled_input(true)
 	set_process_input(true)
-	get_node("CollisionShape2D").disabled = false
+	$CollisionShape2D.disabled = false

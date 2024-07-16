@@ -19,3 +19,11 @@ func update_player(position: Vector2):
 	camera.position_smoothing_enabled = false
 	await get_tree().tree_changed
 	camera.position_smoothing_enabled = true
+
+
+func to_dict() -> Dictionary:
+	return {}
+
+
+func from_dict(dict: Dictionary) -> void:
+	pass

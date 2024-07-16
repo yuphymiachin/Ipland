@@ -19,3 +19,24 @@ func update_player(position: Vector2):
 	camera.position_smoothing_enabled = false
 	await get_tree().tree_changed
 	camera.position_smoothing_enabled = true
+
+
+func to_dict() -> Dictionary:
+	var invisible_collectable_items := []
+	for node in get_tree().get_nodes_in_group("collectable_items"):
+		if not node.visible:
+			var path := get_path_to(node)
+			invisible_collectable_items.append(path)
+	
+	return {
+		"invisible_collectable_items": invisible_collectable_items
+	}
+
+
+func from_dict(dict: Dictionary) -> void:
+	print("from_dict called")
+
+	for node in get_tree().get_nodes_in_group("collectable_items"):
+		var path := get_path_to(node)
+		if path in dict["invisible_collectable_items"]:
+			node.hide()
