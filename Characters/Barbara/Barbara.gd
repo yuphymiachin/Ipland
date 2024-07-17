@@ -21,15 +21,25 @@ func _on_interactable_body_entered(body):
 func handle_button_click():	
 	if Dialogic.current_timeline != null:
 		return
-		
-	if !first_time:
-		Dialogic.start("res://Characters/Barbara/BarbaraDialog.dtl")
+	
+	Global.remove_selection_option_requested.emit(self)
+	Dialogic.timeline_ended.connect(_on_timeline_ended)
+	
+	if first_time:
+		Dialogic.start("res://Characters/Barbara/BarbaraIntro.dtl")
 		first_time = false
 	else:
-		Dialogic.start("res://Characters/Barbara/BarbaraIntro.dtl")
+		Dialogic.start("res://Characters/Barbara/BarbaraDialog.dtl")
 		
 
 
 func _on_interactable_body_exited(body):
+	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	Dialogic.end_timeline()
 	Global.remove_selection_option_requested.emit(self)
+
+
+func _on_timeline_ended():
+	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
+	await get_tree().process_frame
+	Global.add_selection_option_requested.emit(self, "Barbara", handle_button_click)

@@ -6,6 +6,7 @@
 [ext_resource type="LabelSettings" uid="uid://bdu676d3tismq" path="res://UI/Font/Label.tres" id="4_umuro"]
 
 [node name="SelectionOptionButton" type="TextureButton"]
+focus_mode = 0
 texture_normal = ExtResource("1_lfwuc")
 texture_pressed = ExtResource("2_3ul4p")
 texture_hover = ExtResource("3_jxjd0")
@@ -31,3 +32,5 @@ text = "Get"
 label_settings = ExtResource("4_umuro")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -11,9 +11,10 @@ func _ready():
 
 
 func _process(delta):
-	if Input.is_action_just_pressed("ui_accept"):
-		if get_node("Container").get_child_count() > 0:
-			get_node("Container").get_child(0).emit_signal("pressed")
+	if Dialogic.current_timeline == null:
+		if Input.is_action_just_pressed("ui_accept"):
+			if get_node("Container").get_child_count() > 0:
+				get_node("Container").get_child(0).emit_signal("pressed")
 
 
 func _on_texture_button_pressed():
