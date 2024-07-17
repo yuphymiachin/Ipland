@@ -370,7 +370,7 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_ylqvo")
 anim_player = NodePath("../AnimationPlayer")
-parameters/Idle/blend_position = Vector2(2.08165e-12, -1)
+parameters/Idle/blend_position = Vector2(2.08165e-12, 1)
 parameters/Run/blend_position = Vector2(2.08165e-12, 2.08165e-12)
 
 [node name="Head" type="Marker2D" parent="."]
