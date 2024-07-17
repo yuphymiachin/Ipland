@@ -1,52 +1,102 @@
 [background arg="res://Characters/Dialog.png" fade="0.0"]
 join Babara 2 [animation="Bounce In"]
-Babara: Hi there, {player_name}!
-Babara: Seeing you so full of life puts my mind at rest.
-- Good morning, Barbara.
-	Babara: Morning! May you be blessed with a wonderful day!
-	Babara: I'll prey for you~
-- How do you like it here?
-	Babara: Oh, I love it here!
-	Babara: The scenery here is so different from Mondstadt's. I find it really refreshing.
-	Babara: And, here I can sing at the top of my voice without having to worry if I'm disturbing anyone! It's the best way to practice.
-	- Surely no one would ever consider your sweet voice a disturbance?
-		Babara: Ah...
-		Babara: It sure is nice of you to say that! But, uh... still, I always need to make sure I'm being considerate of other people.
-		Babara: Anyway, I'm really happy to be here!
-		Babara: I think I'd like to stay here a little longer.
-	- That's great!
-		Babara: Yeah... I'm just so happy that you invited me to come here!
-- Would you like to have a chat with me?
-	Babara: Oh, sure!
-	Babara: Hehe...
-	- What's with that smile...
-	- Have you suddenly remembered something amusing?
-	Babara: Oh, I just reslised that I haven't chatted with a friend like this in a long time.
-	Babara: I just feel so blessed all of a sudden.
-	- Seems like you're easy to please.
-		Babara: Uhh... Is that so...
-		Babara: Well, maybe... but it's not such a bad thing.
-		Babara: The easier you find it to receive joy, the more energy you have to share that joy with other people.
-	- It's because you're always putting other people first.
-		Babara: Of course I do, that's what I'm supposed tp do!
-		Babara: I've always had so many people looking out for me. I just want to do all that is within my power tp repay their kindness.
-	Player: You are every bit as wonderful as people say.
-	Babara: Ahh... please, no need to shower me with compliments...
-	Babara: Only with constructive criticism can we grow, right...?
-- Is there anything you'd like to do?
-	Babara: Oh, I've been practicing a new song recently.
-	Babara: But I'm still trying to iron out a few details...
-	Babara: When I repeat the chorus, should I go up a half step? I can't decide... And I think there's room for improvement with the dance routine, but I'm not sure...
-	Babara: If it's no trouble, I'd really appreciate it if you could watch my performance and give me your suggestions.
-	- You have my unconditional support.
-	- It would be my honor.
-	Babara: Thank you...!
-	Babara: Um... Please don't laugh at me if there are parts that still need practicing.
-	Babara: I've thought about this a lot of times in the past, but it's taken me this long to finally pluck up the courage to perform for you at such close distance.
-	Babara: If you laughed at me, there'd be nowhere I could run from my embarrassment...
-	- Don't worry. I won't laugh.
-	- I believe in you, and you should believe in yourself as well.
-	Babara: Whew... Okay.
-	Babara: Then...
-	Babara: Let the show begin!
+Babara: Hi {player_name}! How are you today?
+- Pretty good!
+	Babara: Seeing you so full of life puts my mind at rest.
+	- How do you like it here?
+		Babara: Oh, I love it here!
+		Babara: The scenery here is so different from Mondstadt's. I find it really refreshing.
+		Babara: And, here I can sing at the top of my voice without having to worry if I'm disturbing anyone! It's the best way to practice.
+		- Surely no one would ever consider your sweet voice a disturbance?
+			Babara: Ah...
+			Babara: It sure is nice of you to say that! But, uh... still, I always need to make sure I'm being considerate of other people.
+			Babara: Anyway, I'm really happy to be here!
+			Babara: I wish I could stay here a little longer.
+		- That's great!
+			Babara: Yeah... I'm just so happy that you invited me to come here!
+	- Would you like to have a chat with me?
+		Babara: Oh, sure!
+		Babara: Hehe...
+		- What's with that smile...
+		- Have you suddenly remembered something amusing?
+		Babara: Oh, I just reslised that I haven't chatted with a friend like this in a long time.
+		Babara: I just feel so blessed all of a sudden.
+		- Seems like you're easy to please.
+			Babara: Uhh... Is that so...
+			Babara: Well, maybe... but it's not such a bad thing.
+			Babara: The easier you find it to receive joy, the more energy you have to share that joy with other people.
+		- It's because you're always putting other people first.
+			Babara: Of course I do, that's what I'm supposed tp do!
+			Babara: I've always had so many people looking out for me. I just want to do all that is within my power tp repay their kindness.
+		Player: You are every bit as wonderful as people say.
+		Babara: Ahh... please, no need to shower me with compliments...
+		Babara: Only with constructive criticism can we grow, right...?
+	- Is there anything you'd like to do?
+		Babara: Oh, I've been practicing a new song recently.
+		Babara: But I'm still trying to iron out a few details...
+		Babara: When I repeat the chorus, should I go up a half step? I can't decide... And I think there's room for improvement with the dance routine, but I'm not sure...
+		Babara: If it's no trouble, I'd really appreciate it if you could watch my performance and give me your suggestions.
+		- You have my unconditional support.
+		- It would be my honor.
+		Babara: Thank you...!
+		Babara: Um... Please don't laugh at me if there are parts that still need practicing.
+		Babara: I've thought about this a lot of times in the past, but it's taken me this long to finally pluck up the courage to perform for you at such close distance.
+		Babara: If you laughed at me, there'd be nowhere I could run from my embarrassment...
+		- Don't worry. I won't laugh.
+		- I believe in you, and you should believe in yourself as well.
+		Babara: Whew... Okay.
+		Babara: Then...
+		Babara: Let the show begin!
+	- Tell me more about you!
+		Babara: Of course! What do you want to know about me?
+		- What is your favourite prayer?
+			Babara: "To the wind that guides me\: When I'm exhausted, bless me with the strength to keep going forward. When I'm uncertain, bless me with the wisdom to distinguish good from evil. When I suffer from injustice, bless me with the courage to fight back..."
+		- What is your dream?
+			Babara: My dream is to bring a smile to the faces of all the people in my life! As long as I can help, I'm happy~
+		- Anything to share?
+			Babara: I could never get bored of the breathtakingly beautiful nature that surrounds Mondstadt. I've heard that there are blue trees that exist by the sea shore near Inazuma City.
+			Babara: I just need to save up a little more... That's my little secret!
+		- Anything interesting you found?
+			Babara: Sunflowers always face the sun. They're so bright.
+			Babara: In fact, my mother sent me a sunflower-style dress... I wonder when I'll finally get to wear it on stage?
+		- Do you want to be a knight?
+			Babara: Knights look so cool when they swing their sward in combat!
+			Babara: I tried using a sward before but...
+			Babara: Uh, let's just say I have zero talent with a sword.
+		- How do you feel being an idol?
+			Babara: Being an idol, I learned from Alice that "A true idol should always try to heal the soul of the people..."
+			Babara: Yes, I completely agree.
+		- How do you feel on stage?
+			Babara: Every time I get on stage I always satert to doubt myself -- can I really heal every person in Mondstadt?
+			Babara: But I look at you now, and I feel that as long as we keep marching forward, maybe one day I might just...
+			Babara: Huh? I've already healed you?
+			Babara: Well, one's not enough!
+			Player: You've already healed a lot of people.
+			Babara: I suppose...
+		- Anything troubles you in daily life?
+			Babara: My companions keep getting injured, but I'm unable to share the burden of their pain.
+			Babara: The only thing I can do is my absolute very best to heal their wounds! I'll make sure that everyone is healthy.
+		- What is your favourite food?
+			Babara: Do you like spicy dried fish? I have two in my bag.
+			Babara: Here, have one!
+		- What is your least favourite food?
+			Babara: I don't like anything bitter, especially... ugh, bitter gourd.
+- I've been working all day!
+	Babara: Are you tired? Try my new spicy energy drink, I'm sure it'll wake you up!
+	- No thanks.
+	- I want to hear you sing.
+	Babara: Oh? You want to hear me sing...? Sorry, the show is... It hasn't started yet.
+	Player: Sorry just kidding...
+	- I have some coconut cakes for you.
+		Babara: Thank you for making these for me.
+		Babara: This time around, you are the one healing me!
+	- I just made some spicy dried fish.
+		Babara: It's a rare pleasure to eat food that suits my tastes so well.
+		Babara: Today is a blessed day!
+	- Do you want some bitter gourd?
+		Oh, uh, oh dear...
+- Today is my birthday...
+	Babara: Here you go! This is the gift I got for your birthday, along with my exclusive autograph!
+	Babara: Hehe, when my next song comes out, I'll make sure you're the first one to hear it!
+	Babara: Happy birthday!
 [end_timeline]

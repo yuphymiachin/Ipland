@@ -22,11 +22,12 @@ func handle_button_click():
 	if Dialogic.current_timeline != null:
 		return
 		
-	if first_time:
-		Dialogic.start("res://Characters/Barbara/BarbaraIntro.dtl")
+	if !first_time:
+		Dialogic.start("res://Characters/Barbara/BarbaraDialog.dtl")
 		first_time = false
 	else:
-		Dialogic.start("res://Characters/Barbara/BarbaraDialog.dtl")
+		Dialogic.start("res://Characters/Barbara/BarbaraIntro.dtl")
+		
 
 
 func _on_interactable_body_exited(body):

@@ -1,5 +1,9 @@
 [background arg="res://Characters/Dialog.png" fade="0.0"]
 join Babara 2 [animation="Bounce In"]
-Babara: Hi, I'm Babara
-Player: 你好\@^0^@)/
+Babara: Hi, I'm Barbara. This is my first time come to this island!
+Player: Welcome to the island, Barbara!
+Player: My name is {player_name}. I'm the campsite manager.
+Player: Hope you will have a good time here \:)
+Babara: Thank you! This weather is so amazing!
+Babara: I could burst into song!
 [end_timeline]
