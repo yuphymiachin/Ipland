@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://World/ShopInterior/ShopInterior.gd" id="1_wil20"]
 [ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="2_k0dj5"]
-[ext_resource type="Texture2D" uid="uid://dnf7enmsnosto" path="res://World/Shop-2-2.png" id="2_o1d1q"]
+[ext_resource type="Texture2D" uid="uid://dnf7enmsnosto" path="res://World/ShopInterior/ShopInterior.png" id="2_o1d1q"]
 [ext_resource type="PackedScene" uid="uid://cwrxv3r0fo22m" path="res://World/AppleStock.tscn" id="3_d3dvs"]
 [ext_resource type="PackedScene" uid="uid://c1wpktubk3rkm" path="res://World/FireWoodStock.tscn" id="4_m3ihx"]
 [ext_resource type="PackedScene" uid="uid://c5wr4wiq41l3q" path="res://World/CoconutStock.tscn" id="5_cc1ye"]

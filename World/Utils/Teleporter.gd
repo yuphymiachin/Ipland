@@ -19,7 +19,7 @@ func _on_player_entered(player: Player):
 	if auto_teleport:
 		call_deferred("change_scene", path, entry_point)
 	else:
-		Global.add_selection_option_requested.emit(self, "Enter", handle_button_click)
+		Global.add_selection_option_requested.emit(self, "Enter Shop", handle_button_click)
 
 
 func _on_player_exited(player: Player):

@@ -1,8 +1,8 @@
 [gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bdu676d3tismq"]
 
-[ext_resource type="FontFile" uid="uid://cuhmf72x4qupv" path="res://UI/Font/pixel_operator/PixelOperator-Bold.ttf" id="1_ooa3m"]
+[ext_resource type="FontFile" uid="uid://c3etf5wbeag0d" path="res://UI/Font/pixel_operator/PixelOperatorHB.ttf" id="1_22y27"]
 
 [resource]
-font = ExtResource("1_ooa3m")
-font_color = Color(0.162066, 0.162066, 0.162066, 1)
+font = ExtResource("1_22y27")
+font_color = Color(0.286532, 0.0873677, 0.06034, 1)
 outline_color = Color(0, 0, 0, 1)

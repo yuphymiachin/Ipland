@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8186schm50w8"
-path="res://.godot/imported/Map.png-c34a5f64c120d8a6679bd999093b69e0.ctex"
+uid="uid://3mktbcgjj8wf"
+path="res://.godot/imported/[1] Normal.png-b74e77c7c3e6f55c8af6413edc3599cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Map.png"
-dest_files=["res://.godot/imported/Map.png-c34a5f64c120d8a6679bd999093b69e0.ctex"]
+source_file="res://UI/Buttons/[0] Transparent Wood/[1] Normal.png"
+dest_files=["res://.godot/imported/[1] Normal.png-b74e77c7c3e6f55c8af6413edc3599cd.ctex"]
 
 [params]
 

@@ -1,15 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://brvw6kmw3kfbg"]
+[gd_scene load_steps=4 format=3 uid="uid://brvw6kmw3kfbg"]
 
-[ext_resource type="Texture2D" uid="uid://dirqmge14xwqg" path="res://UI/Buttons/[1] Light Blue/[1] Normal.png" id="1_lfwuc"]
-[ext_resource type="Texture2D" uid="uid://dlqu5m0n1jncb" path="res://UI/Buttons/[1] Light Blue/[2] Clicked.png" id="2_3ul4p"]
-[ext_resource type="Texture2D" uid="uid://xvvm2ur1crsr" path="res://UI/Buttons/[1] Light Blue/[3] Hover.png" id="3_jxjd0"]
+[ext_resource type="Texture2D" uid="uid://3mktbcgjj8wf" path="res://UI/Buttons/[0] Transparent Wood/[1] Normal.png" id="1_akoaw"]
 [ext_resource type="LabelSettings" uid="uid://bdu676d3tismq" path="res://UI/Font/Label.tres" id="4_umuro"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b0no2"]
+load_path = "res://.godot/imported/[3] Hover-2.png-8fec96ac05fd06afaa6057125756c16a.ctex"
+
 [node name="SelectionOptionButton" type="TextureButton"]
+offset_right = 64.0
+offset_bottom = 16.0
 focus_mode = 0
-texture_normal = ExtResource("1_lfwuc")
-texture_pressed = ExtResource("2_3ul4p")
-texture_hover = ExtResource("3_jxjd0")
+texture_normal = ExtResource("1_akoaw")
+texture_pressed = ExtResource("1_akoaw")
+texture_hover = ExtResource("1_akoaw")
 stretch_mode = 0
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
@@ -20,17 +23,29 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -20.0
-offset_top = -11.5
+offset_top = -11.0
 offset_right = 20.0
-offset_bottom = 11.5
+offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
-text = "Get"
+text = "Getg"
 label_settings = ExtResource("4_umuro")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("CompressedTexture2D_b0no2")
+region_rect = Rect2(0, 0, 64, 16)
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
