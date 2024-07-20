@@ -1,0 +1,51 @@
+[background arg="res://Characters/Dialog.png" fade="0.0"]
+join Apple 2 [animation="Bounce In"]
+Apple: Hi, {player_name}! It’s so nice to see you again!
+Player: Hi, Apple! How’s everything going since we last talked?
+Apple: Everything’s going great! I’ve been exploring the island and getting to know the other residents. It’s been a lot of fun!
+Apple: I’ve even tried some new activities and found a few hidden spots that I think you might enjoy.
+- What new activities have you tried?
+	Apple: Oh, I’ve been trying my hand at fishing and bug catching. It’s been a bit challenging, but I’m starting to get the hang of it.
+	Apple: I also attended a local craft workshop and made a cute little decoration for my tent. It’s so satisfying to create something with my own paws!
+	Apple: Have you tried any of these activities? They’re really enjoyable once you get into them.
+	- I’ve tried fishing before. Any tips you’ve picked up?
+		Apple: Definitely! One thing I’ve learned is to be patient and watch for the fish shadows. Sometimes, you have to wait for the right moment to cast your line.
+		Apple: Also, experimenting with different baits can make a big difference. I’ve found that certain types attract specific fish.
+		Apple: If you need any help or want to join me for a fishing session, just let me know!
+	- That sounds fun! I haven’t tried bug catching yet.
+		Apple: Bug catching is a blast! You’ll need a net, of course. And timing is key—some bugs only appear at certain times of the day or year.
+		Apple: I’ve been keeping a little journal of the different bugs I’ve spotted. It’s like a mini adventure each time I go out looking for new ones.
+		Apple: If you’d like, we can go bug catching together sometime. I’d love to share my tips and see what we can find.
+	- The craft workshop sounds interesting. What did you make?
+		Apple: I made a lovely little flower wreath for my tent. It adds a bit of charm and brightness to my space.
+		Apple: The workshop was so much fun! I learned a lot about using natural materials and creating things by hand.
+		Apple: I’m thinking of trying my hand at making some more decorations. Maybe you could join me for a crafting session? It’d be fun to create something together!
+- How have you been finding the local residents?
+	Apple: They’re all so friendly and welcoming! I’ve made a few new friends already and have had some lovely chats.
+	Apple: I really enjoy hearing their stories and learning about their lives. It’s fascinating to see how different everyone’s experiences are.
+	Apple: How about you? Have you had a chance to get to know the other residents better?
+	- I’ve met a few of them. They seem like a great bunch.
+		Apple: That’s awesome! It’s always nice to have a supportive community around. Everyone seems to have their own unique personality and talents.
+		Apple: I’m excited to continue making new friends and learning more about everyone. It’s all part of the fun!
+	- I’ve been focusing on managing the campsite and organizing events.
+		Apple: That sounds like a big responsibility, but I’m sure you’re doing an amazing job! The campsite looks great, and I’ve heard a lot of positive feedback from the other residents.
+		Apple: If you ever need any help or ideas for events, feel free to ask. I’d be happy to contribute or help out in any way I can.
+- What’s your favorite thing about living here so far?
+	Apple: My favorite thing has to be the sense of community and how everyone seems to come together. It’s so heartwarming to see everyone supporting each other.
+	Apple: I also love the natural beauty of the island. It’s so peaceful and refreshing to be surrounded by nature.
+	Apple: It really feels like a perfect place to relax and enjoy life. What about you? What’s been your favorite part of managing the island?
+	- I enjoy seeing the residents happy and involved in activities.
+		Apple: That’s wonderful! Seeing others enjoy themselves and thrive must be very rewarding.
+		Apple: It’s great to know that your efforts are making a positive impact on everyone’s experience here. Keep up the fantastic work!
+	- I love discovering new things and exploring the island myself.
+		Apple: That’s so exciting! There’s always something new to discover, and it’s fun to explore and find hidden gems.
+		Apple: If you ever want a buddy for exploration or need any recommendations on where to go, I’m always up for an adventure!
+- Anything else you’d like to share or ask?
+	Apple: Hmm, not much at the moment. Just enjoying the island and looking forward to what’s next.
+	Apple: But I’d love to hear more about your experiences and any cool stories you have. It’s always fun to share and learn from each other.
+		- I’ll be happy to share some stories. Let’s chat more soon!
+		Apple: Sounds great! I’m looking forward to it. Thanks for catching up with me today!
+		- I’d love to hear more about your adventures and activities.
+		Apple: I’m sure I’ll have plenty more to share. It’s always a pleasure to talk with you and hear about what you’re up to.
+		Apple: Until next time, enjoy your day and keep having fun!
+[end_timeline]
