@@ -1,0 +1,15 @@
+[background arg="res://Characters/Dialog.png" fade="0.0"]
+join Rick 2 [animation="Bounce In"]
+Rick: Hey there, I'm Rick. Just landed on this island. Seems pretty chill.
+Player: Welcome to the island, Rick!
+Player: My name is {player_name}. I'm the campsite manager.
+Player: Hope you will have a good time here \:)
+Rick: Yeah, yeah, thanks. As long as there's no interdimensional weirdness, I'm good.
+Rick: So, where’s the booze on this island? I need a drink to kick back.
+Player: We don’t have anything quite like that, but we do have some great local drinks.
+Rick: Local drinks, huh? Well, as long as it's not just fruit punch, I might give it a shot.
+Player: I’m sure you’ll find something you like. If you need anything else, just let me know!
+Rick: Will do. And if you find any strange portals or alien tech, give me a shout. Could be useful.
+Player: Will do! Enjoy your stay, Rick.
+Rick: Yeah, yeah, I’ll try not to blow anything up.
+[end_timeline]

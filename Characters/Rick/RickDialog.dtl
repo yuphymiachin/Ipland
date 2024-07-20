@@ -1,0 +1,95 @@
+[background arg="res://Characters/Dialog.png" fade="0.0"]
+join Rick 2 [animation="Bounce In"]
+Rick: Hey, {player_name}. What’s the scoop?
+Player: Not much, just managing the campsite. How’s your exploration going?
+Rick: Oh, you know, same old. Just messing around, trying to find something interesting or maybe invent a new gadget. 
+Rick: This island’s pretty laid-back, which is a nice change of pace.
+Rick: I’ve been trying to figure out the local tech and materials.
+Rick: Got any cool recommendations for things to do around here?
+- Well, we have some local activities and festivals you might enjoy.
+	Rick: Festivals, huh? I bet they’ve got some quirky traditions. 
+	Rick: I’m always up for seeing how different cultures celebrate. 
+	Rick: Do they have anything that involves bizarre rituals or unusual foods?
+	- There’s a summer festival coming up with unique local traditions. They’ve got everything from fire dances to stargazing events.
+		Rick: Fire dances and stargazing, you say? Sounds like a blast.
+		Rick: I’ve seen some pretty wild stuff in my travels, but this could be a fun, low-stakes adventure. I might even pick up some ideas for my next experiment.
+		Rick: By the way, do you think they’d mind if I brought a little extra equipment to observe the festival? 
+		Rick: It could be a chance to test out some new tech in a less chaotic setting.
+		- Sure, as long as you don’t disturb the festivities.
+			Rick: Perfect! I’ll make sure to keep a low profile. 
+			Rick: The last thing I want is to accidentally cause a scene.
+		- You might want to check with the locals first.
+			Rick: Good point. I’ll make sure to ask around. Don’t want to step on any toes.
+	- We also have some nature trails and scenic spots if you’re into that sort of thing.
+		Rick: Nature trails, huh? I don’t usually do the whole “nature” thing, but it might be interesting. I could use a break from the usual chaos. 
+		Rick: Plus, who knows? Maybe I’ll find something useful for my experiments in the wild.
+		Rick: Do you think there’s any chance I’ll stumble upon something rare or scientifically significant out there? 
+		Rick: I’ve always had a knack for finding the unexpected.
+		- You might find some unique local flora or fauna.
+			Rick: That’s exactly the kind of thing I’m hoping for. I’ll keep my eyes peeled. 
+			Rick: If you hear any rumors about unusual wildlife, let me know.
+		- The trails are beautiful but mostly peaceful.
+			Rick: Sounds relaxing. Maybe it’ll be a nice change of pace. Who knows, it might inspire some new ideas.
+	- If you're into local crafts, there’s a market where you can find some unique handmade items.
+		Rick: Crafts and markets, interesting. I’m more interested in finding something that might double as a scientific breakthrough. 
+		Rick: But hey, if I come across any strange or fascinating objects, I might have to grab them.
+		Rick: Are there any particularly odd or rare items that the locals are known for? I’ve got a keen eye for finding hidden gems.
+		- The market has some rare local artifacts that might catch your interest.
+			Rick: Artifacts, huh? That could be exactly what I’m looking for. 
+			Rick: I’ll make sure to check out the market thoroughly.
+		- Mostly traditional crafts, but there might be a few unique finds.
+			Rick: Traditional crafts can be surprisingly innovative. 
+			Rick: I’ll keep an open mind. Sometimes the most mundane items have the most unexpected uses.
+- Anything else on your mind?
+	Rick: Actually, yeah. 
+	Rick: I’ve been working on a few gadgets and could use some more parts. Not your standard stuff—looking for materials that might be a bit more unconventional.
+	Rick: You know of any local spots where I could scavenge or buy tech components?
+	- We don’t have many high-tech parts, but there are some interesting local materials that could be useful.
+		Rick: Local materials, huh? That could be a gold mine if they’re unique enough. Sometimes the most unexpected things can be the most valuable. I’ll have to see what I can find.
+		Rick: If you come across any unusual materials while you’re out and about, let me know. I’m always on the lookout for something new.
+		- I’ll keep an eye out for anything that might help.
+			Rick: Appreciate it. The more leads I have, the better. I’ll also be searching around, so maybe we’ll cross paths and compare notes.
+	- There’s a local workshop where you might find some tools or equipment.
+		Rick: A workshop, you say? Sounds promising. I could use some tools to modify or repair my gear. 
+		Rick: Workshops are usually full of surprises—old tech, useful scraps, you name it.
+		Rick: Do you know if they allow visitors to tinker around or if there are any workshops that are particularly well-known?
+		- I’m not sure about visitor policies, but I can find out.
+			Rick: That would be great. If you find any specific recommendations, let me know. I’ll check it out and see what I can scavenge or borrow.
+		- There are a few workshops known for their high-quality tools.
+			Rick: Excellent. I’ll make a point to visit those. High-quality tools can make all the difference in precision work.
+	- I’ll ask around and see if anyone has spare parts.
+		Rick: Thanks, {player_name}. That could save me a lot of time. If you come across any intriguing components or tech while you’re at it, let me know.
+		Rick: And if you happen to hear any gossip or rumors about hidden tech or secret spots, I’d be very interested.
+- Do you need any help with your experiments?
+	Rick: I could use a hand if you’re up for it. Maybe help me track down some of these local materials. And if you’re up for it, helping me set up some experiments could be fun. 
+	Rick: It’s always interesting to have someone around who doesn’t mind a bit of chaos.
+	- Sure, I’d be happy to help. What do you need me to do?
+		Rick: Great! I’ll give you a list of materials I need, and we can start scouring the island. 
+		Rick: Also, if you’re up for it, I could use some assistance with setting up some of my gadgets. Don’t worry if things get a bit messy.
+	- I’m not sure if I’m the best at this.
+		Rick: No worries. I can handle most of the heavy lifting. But if you change your mind or want to give it a try, just let me know. Sometimes even the smallest contributions can make a big difference.
+	- If you know of any secret labs or hidden tech on the island, that would be even better.
+		Rick: Secret labs or hidden tech? Now you’re talking my language. If you find any leads or hidden spots, keep me in the loop. There might be some forgotten tech lying around that could be extremely valuable.
+- How’s your stay on the island so far?
+	Rick: It’s been... different. 
+	Rick: A welcome change from the usual chaos and destruction. 
+	Rick: The island’s calm and serene, which is a nice break from the usual high-energy environments I’m used to.
+	- I’m glad to hear that. Anything specific you’re enjoying or finding interesting?
+		Rick: I’m actually enjoying the slower pace. It’s been a while since I’ve had a chance to just relax and observe without some imminent threat or crisis. Plus, the locals seem pretty chill.
+	- Do you miss your usual adventures and chaos?
+		Rick: Sure, there’s always a part of me that misses the thrill of the unknown and the adrenaline rush. But every now and then, a break from that is exactly what I need. It helps me recharge and think up new ideas.
+	- Anything you’re looking forward to?
+		Rick: Well, discovering something new or maybe finding a good drink to unwind with. It’s always exciting to see what unexpected finds come up when you’re exploring a new place.
+- Anything else you want to share?
+	Rick: Just that if you ever find yourself in need of something... unconventional, or if you have any wild ideas, you know where to find me. 
+	Rick: I’m always up for a bit of experimentation or a new project.
+	- Will do. I might take you up on that for sure.
+		Rick: Sounds good. I’m looking forward to it. There’s always room for more chaos, as long as it’s in good company.
+	- I’ll keep that in mind. Thanks, Rick.
+		Rick: No problem. Let’s see what this island has in store. And if you come across any interesting anomalies, give me a shout.
+	- Any crazy ideas or projects you’re working on?
+		Rick: A few, actually. 
+		Rick: I’ve got some concepts brewing that might revolutionize interdimensional travel—or at least make things a bit more interesting around here. 
+		Rick: Just need the right components and a bit of inspiration.
+		Rick: If you’re interested in hearing about some of my more outlandish theories or experiments, let me know. I’ve got plenty of wild ideas floating around.
+[end_timeline]

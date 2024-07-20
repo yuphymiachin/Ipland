@@ -45,12 +45,14 @@ func handle_button_click():
 
 
 func _on_interactable_body_exited(body):
-	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
+	if Dialogic.timeline_ended.is_connected(_on_timeline_ended):
+		Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	Dialogic.end_timeline()
 	Global.remove_selection_option_requested.emit(self)
 
 
 func _on_timeline_ended():
-	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
+	if Dialogic.timeline_ended.is_connected(_on_timeline_ended):
+		Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	await get_tree().process_frame
 	Global.add_selection_option_requested.emit(self, character_name, handle_button_click)

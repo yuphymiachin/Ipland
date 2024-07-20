@@ -30,6 +30,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "BabaraDialog 01": "res://Characters/Barbara/BarbaraDialog.dtl",
+"RickDialog": "res://Characters/Rick/RickDialog.dtl",
+"RickIntro": "res://Characters/Rick/RickIntro.dtl",
 "intro": "res://Characters/Barbara/BarbaraIntro.dtl"
 }
 layout/style_list=["res://Characters/DialogueStyle.tres"]
