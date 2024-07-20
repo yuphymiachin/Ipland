@@ -4,7 +4,6 @@
 [ext_resource type="LabelSettings" uid="uid://bdu676d3tismq" path="res://UI/Font/Label.tres" id="4_umuro"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b0no2"]
-load_path = "res://.godot/imported/[3] Hover-2.png-8fec96ac05fd06afaa6057125756c16a.ctex"
 
 [node name="SelectionOptionButton" type="TextureButton"]
 offset_right = 64.0

@@ -1,10 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://bp0hwms6oo1wb"]
+[gd_scene load_steps=22 format=3 uid="uid://bp0hwms6oo1wb"]
 
 [ext_resource type="Script" path="res://World/World.gd" id="1_i2qi5"]
 [ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_ru50b"]
 [ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="3_dxisw"]
-[ext_resource type="PackedScene" uid="uid://nogkhtqh6xa4" path="res://Characters/Barbara/Barbara Pixel.tscn" id="4_k6ak4"]
 [ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="5_4bvsm"]
+[ext_resource type="Texture2D" uid="uid://dd2pjak0f43si" path="res://Characters/Barbara/Barbara Pixel.png" id="5_hy2vl"]
 [ext_resource type="PackedScene" uid="uid://fvb0wj3oqvri" path="res://World/Shop.tscn" id="6_2e1md"]
 [ext_resource type="PackedScene" uid="uid://pbqgfeskvh5t" path="res://World/Home.tscn" id="7_njx0r"]
 [ext_resource type="PackedScene" uid="uid://0hunlpvklkta" path="res://World/Tent.tscn" id="8_5gi03"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://wo2cn2npwacl" path="res://World/AppleTree.tscn" id="15_hxabf"]
 [ext_resource type="PackedScene" uid="uid://cj1elrasq6icb" path="res://World/Firewood.tscn" id="16_1wiep"]
 [ext_resource type="PackedScene" uid="uid://cm5ecqycuffyx" path="res://UI/SelectionOptions.tscn" id="17_ckqge"]
+[ext_resource type="PackedScene" uid="uid://42bpookry2bf" path="res://Characters/CharacterPixel.tscn" id="18_dxj38"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gc6gg"]
 
@@ -508,8 +509,11 @@ texture = ExtResource("3_dxisw")
 [node name="YSort" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="Babara" parent="YSort" instance=ExtResource("4_k6ak4")]
-position = Vector2(735, 1242)
+[node name="CharacterPixel" parent="YSort" instance=ExtResource("18_dxj38")]
+position = Vector2(516, 1270)
+character_name = "Barbara"
+texture = ExtResource("5_hy2vl")
+animation_number_of_frames = 5
 
 [node name="Player" parent="YSort" instance=ExtResource("5_4bvsm")]
 position = Vector2(573, 1269)
@@ -661,3 +665,6 @@ position = Vector2(591, 1217)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="SelectionOptions" parent="CanvasLayer" instance=ExtResource("17_ckqge")]
+
+[node name="CharacterPixel" parent="." instance=ExtResource("18_dxj38")]
+position = Vector2(677, 1272)

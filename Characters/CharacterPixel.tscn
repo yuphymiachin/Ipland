@@ -1,0 +1,108 @@
+[gd_scene load_steps=9 format=3 uid="uid://42bpookry2bf"]
+
+[ext_resource type="Script" path="res://Characters/Character.gd" id="1_cg0q4"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rdnj3"]
+load_path = "res://.godot/imported/Apple Pixel.png-710373d00c1bf78a27e7763e2b296434.ctex"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4h8my"]
+radius = 25.02
+
+[sub_resource type="Animation" id="Animation_8sp7s"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_eql3k"]
+resource_name = "Idle_5_frames"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_r27lo"]
+resource_name = "Idle_2_frames"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_omtmc"]
+_data = {
+"Idle_2_frames": SubResource("Animation_r27lo"),
+"Idle_5_frames": SubResource("Animation_eql3k"),
+"RESET": SubResource("Animation_8sp7s")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8rdjd"]
+radius = 5.0
+height = 14.0
+
+[node name="CharacterPixel" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_cg0q4")
+character_name = "Apple"
+texture = SubResource("CompressedTexture2D_rdnj3")
+animation_number_of_frames = 2
+intro_timeline = "res://Characters/Barbara/BarbaraIntro.dtl"
+dialog_timeline = "res://Characters/Barbara/BarbaraDialog.dtl"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_rdnj3")
+offset = Vector2(0, -26.89)
+hframes = 6
+frame = 1
+
+[node name="Interactable" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(0, -9)
+shape = SubResource("CircleShape2D_4h8my")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_omtmc")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_8rdjd")
+
+[node name="Head" type="Marker2D" parent="."]
+position = Vector2(6, -20)
+
+[connection signal="body_entered" from="Interactable" to="." method="_on_interactable_body_entered"]
+[connection signal="body_exited" from="Interactable" to="." method="_on_interactable_body_exited"]

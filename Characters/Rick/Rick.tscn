@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://daoa2kc1ynti7"]
+
+[ext_resource type="Script" path="res://Characters/CustomPortrait.gd" id="1_gn0u0"]
+[ext_resource type="Texture2D" uid="uid://cpcalmnxgxt80" path="res://Characters/Rick/Rick.png" id="2_klmw2"]
+
+[sub_resource type="Animation" id="Animation_eql3k"]
+resource_name = "Idle"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_8sp7s"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_omtmc"]
+_data = {
+"Idle": SubResource("Animation_eql3k"),
+"RESET": SubResource("Animation_8sp7s")
+}
+
+[node name="Babara" type="Node2D"]
+script = ExtResource("1_gn0u0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(30, -174)
+texture = ExtResource("2_klmw2")
+offset = Vector2(0, -26.89)
+hframes = 6
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_omtmc")
+}
+autoplay = "Idle"
