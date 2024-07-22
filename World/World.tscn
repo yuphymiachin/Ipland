@@ -516,7 +516,7 @@ position = Vector2(444, 1340)
 position = Vector2(549.664, 1323.66)
 
 [node name="CharacterMarker3" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
-position = Vector2(671.188, 1326.02)
+position = Vector2(645, 1255)
 
 [node name="CharacterMarker4" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
 position = Vector2(708.235, 1306.2)

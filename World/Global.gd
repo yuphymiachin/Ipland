@@ -48,7 +48,14 @@ func remove_inventory(item: Item, count: int):
 		inventory[item] -= count
 	print(inventory)
 
+var visitor_count = 0
+var new_visitor_count = 2
 
 # Define how many new visitors can come to the island
 func get_new_visitor_count():
-	return 2
+	return new_visitor_count
+
+
+func report_new_visitors(count):
+	visitor_count += count
+	new_visitor_count -= count
