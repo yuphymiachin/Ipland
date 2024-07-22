@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CharacterResource" load_steps=3 format=3 uid="uid://kvgqixfid608"]
+
+[ext_resource type="Script" path="res://Characters/CharacterResource.gd" id="1_5aimt"]
+[ext_resource type="Texture2D" uid="uid://clleb31pnnuum" path="res://Characters/Apple/Apple Pixel.png" id="2_wxb4o"]
+
+[resource]
+script = ExtResource("1_5aimt")
+character_name = "Rick"
+texture = ExtResource("2_wxb4o")
+animation_number_of_frames = 2
+intro_timeline = "res://Characters/Rick/RickIntro.dtl"
+dialog_timeline = "res://Characters/Rick/RickDialog.dtl"

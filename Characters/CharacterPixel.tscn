@@ -8,8 +8,10 @@ load_path = "res://.godot/imported/Apple Pixel.png-710373d00c1bf78a27e7763e2b296
 [sub_resource type="CircleShape2D" id="CircleShape2D_4h8my"]
 radius = 25.02
 
-[sub_resource type="Animation" id="Animation_8sp7s"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_r27lo"]
+resource_name = "Idle_2_frames"
+length = 0.8
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -17,10 +19,10 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [1]
+"values": [0, 1]
 }
 
 [sub_resource type="Animation" id="Animation_eql3k"]
@@ -39,10 +41,8 @@ tracks/0/keys = {
 "values": [0, 1, 1, 2, 3]
 }
 
-[sub_resource type="Animation" id="Animation_r27lo"]
-resource_name = "Idle_2_frames"
-length = 0.8
-loop_mode = 1
+[sub_resource type="Animation" id="Animation_8sp7s"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -50,10 +50,10 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [0, 1]
+"values": [1]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_omtmc"]
@@ -71,11 +71,6 @@ height = 14.0
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_cg0q4")
-character_name = "Apple"
-texture = SubResource("CompressedTexture2D_rdnj3")
-animation_number_of_frames = 2
-intro_timeline = "res://Characters/Barbara/BarbaraIntro.dtl"
-dialog_timeline = "res://Characters/Barbara/BarbaraDialog.dtl"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("CompressedTexture2D_rdnj3")

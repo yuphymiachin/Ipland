@@ -1,12 +1,14 @@
-[gd_scene load_steps=22 format=3 uid="uid://bp0hwms6oo1wb"]
+[gd_scene load_steps=24 format=3 uid="uid://bp0hwms6oo1wb"]
 
 [ext_resource type="Script" path="res://World/World.gd" id="1_i2qi5"]
 [ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_ru50b"]
 [ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="3_dxisw"]
 [ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="5_4bvsm"]
-[ext_resource type="Texture2D" uid="uid://dd2pjak0f43si" path="res://Characters/Barbara/Barbara Pixel.png" id="5_hy2vl"]
+[ext_resource type="Resource" uid="uid://dhm0b7ire0v4b" path="res://Characters/Resources/Barbara.tres" id="5_jkmh3"]
 [ext_resource type="PackedScene" uid="uid://fvb0wj3oqvri" path="res://World/Shop.tscn" id="6_2e1md"]
+[ext_resource type="Resource" uid="uid://kvgqixfid608" path="res://Characters/Resources/Rick.tres" id="6_xnc6i"]
 [ext_resource type="PackedScene" uid="uid://pbqgfeskvh5t" path="res://World/Home.tscn" id="7_njx0r"]
+[ext_resource type="Resource" uid="uid://closqxh4kx4w6" path="res://Characters/Resources/Apple.tres" id="7_ww02u"]
 [ext_resource type="PackedScene" uid="uid://0hunlpvklkta" path="res://World/Tent.tscn" id="8_5gi03"]
 [ext_resource type="PackedScene" uid="uid://c467uvqho2f4e" path="res://World/Trailer.tscn" id="9_fjsfn"]
 [ext_resource type="PackedScene" uid="uid://bi8h5cotw6pui" path="res://World/SpeedBoat.tscn" id="10_am7jm"]
@@ -509,22 +511,19 @@ texture = ExtResource("3_dxisw")
 [node name="YSort" type="Node2D" parent="."]
 y_sort_enabled = true
 
+[node name="Characters" type="Node2D" parent="YSort"]
+
 [node name="Babara" parent="YSort" instance=ExtResource("18_dxj38")]
 position = Vector2(516, 1270)
-character_name = "Barbara"
-texture = ExtResource("5_hy2vl")
-animation_number_of_frames = 5
+character_resource = ExtResource("5_jkmh3")
 
 [node name="Rick" parent="YSort" instance=ExtResource("18_dxj38")]
 position = Vector2(677, 1272)
-character_name = "Rick"
-intro_timeline = "res://Characters/Rick/RickIntro.dtl"
-dialog_timeline = "res://Characters/Rick/RickDialog.dtl"
+character_resource = ExtResource("6_xnc6i")
 
 [node name="Apple" parent="YSort" instance=ExtResource("18_dxj38")]
 position = Vector2(609, 1318)
-intro_timeline = "res://Characters/Apple/AppleIntro.dtl"
-dialog_timeline = "res://Characters/Apple/AppleDialog.dtl"
+character_resource = ExtResource("7_ww02u")
 
 [node name="Player" parent="YSort" instance=ExtResource("5_4bvsm")]
 position = Vector2(573, 1269)
