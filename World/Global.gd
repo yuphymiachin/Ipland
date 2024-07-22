@@ -34,6 +34,7 @@ func get_inventory(item: Item):
 		return 0
 	return inventory[item]
 
+
 func add_inventory(item: Item, count: int):
 	if item not in inventory:
 		inventory[item] = count
@@ -41,7 +42,13 @@ func add_inventory(item: Item, count: int):
 		inventory[item] += count
 	print(inventory)
 
+
 func remove_inventory(item: Item, count: int):
 	if item in inventory:
 		inventory[item] -= count
 	print(inventory)
+
+
+# Define how many new visitors can come to the island
+func get_new_visitor_count():
+	return 2

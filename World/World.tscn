@@ -1,14 +1,11 @@
-[gd_scene load_steps=24 format=3 uid="uid://bp0hwms6oo1wb"]
+[gd_scene load_steps=20 format=3 uid="uid://bp0hwms6oo1wb"]
 
 [ext_resource type="Script" path="res://World/World.gd" id="1_i2qi5"]
 [ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_ru50b"]
 [ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="3_dxisw"]
 [ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="5_4bvsm"]
-[ext_resource type="Resource" uid="uid://dhm0b7ire0v4b" path="res://Characters/Resources/Barbara.tres" id="5_jkmh3"]
 [ext_resource type="PackedScene" uid="uid://fvb0wj3oqvri" path="res://World/Shop.tscn" id="6_2e1md"]
-[ext_resource type="Resource" uid="uid://kvgqixfid608" path="res://Characters/Resources/Rick.tres" id="6_xnc6i"]
 [ext_resource type="PackedScene" uid="uid://pbqgfeskvh5t" path="res://World/Home.tscn" id="7_njx0r"]
-[ext_resource type="Resource" uid="uid://closqxh4kx4w6" path="res://Characters/Resources/Apple.tres" id="7_ww02u"]
 [ext_resource type="PackedScene" uid="uid://0hunlpvklkta" path="res://World/Tent.tscn" id="8_5gi03"]
 [ext_resource type="PackedScene" uid="uid://c467uvqho2f4e" path="res://World/Trailer.tscn" id="9_fjsfn"]
 [ext_resource type="PackedScene" uid="uid://bi8h5cotw6pui" path="res://World/SpeedBoat.tscn" id="10_am7jm"]
@@ -19,7 +16,6 @@
 [ext_resource type="PackedScene" uid="uid://wo2cn2npwacl" path="res://World/AppleTree.tscn" id="15_hxabf"]
 [ext_resource type="PackedScene" uid="uid://cj1elrasq6icb" path="res://World/Firewood.tscn" id="16_1wiep"]
 [ext_resource type="PackedScene" uid="uid://cm5ecqycuffyx" path="res://UI/SelectionOptions.tscn" id="17_ckqge"]
-[ext_resource type="PackedScene" uid="uid://42bpookry2bf" path="res://Characters/CharacterPixel.tscn" id="18_dxj38"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gc6gg"]
 
@@ -513,17 +509,17 @@ y_sort_enabled = true
 
 [node name="Characters" type="Node2D" parent="YSort"]
 
-[node name="Babara" parent="YSort" instance=ExtResource("18_dxj38")]
-position = Vector2(516, 1270)
-character_resource = ExtResource("5_jkmh3")
+[node name="CharacterMarker1" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+position = Vector2(444, 1340)
 
-[node name="Rick" parent="YSort" instance=ExtResource("18_dxj38")]
-position = Vector2(677, 1272)
-character_resource = ExtResource("6_xnc6i")
+[node name="CharacterMarker2" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+position = Vector2(549.664, 1323.66)
 
-[node name="Apple" parent="YSort" instance=ExtResource("18_dxj38")]
-position = Vector2(609, 1318)
-character_resource = ExtResource("7_ww02u")
+[node name="CharacterMarker3" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+position = Vector2(671.188, 1326.02)
+
+[node name="CharacterMarker4" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+position = Vector2(708.235, 1306.2)
 
 [node name="Player" parent="YSort" instance=ExtResource("5_4bvsm")]
 position = Vector2(573, 1269)
