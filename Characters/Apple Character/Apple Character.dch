@@ -17,12 +17,12 @@
 "portraits": {
 "Default": {
 "export_overrides": {
-"image": "\"res://Characters/Apple/Apple Pixel.png\""
+"image": "\"\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
+"scene": "res://Characters/Apple Character/Apple Character.tscn"
 }
 },
 "scale": 1.0

@@ -1,10 +1,11 @@
-[gd_scene load_steps=20 format=3 uid="uid://bp0hwms6oo1wb"]
+[gd_scene load_steps=23 format=3 uid="uid://bp0hwms6oo1wb"]
 
 [ext_resource type="Script" path="res://World/World.gd" id="1_i2qi5"]
 [ext_resource type="Texture2D" uid="uid://bfnd67vfri8s0" path="res://World/Map Tileset.png" id="2_ru50b"]
 [ext_resource type="Texture2D" uid="uid://c4kcm16txvs68" path="res://map.bmp" id="3_dxisw"]
 [ext_resource type="PackedScene" uid="uid://rpfgmoslb41t" path="res://Player/player.tscn" id="5_4bvsm"]
 [ext_resource type="PackedScene" uid="uid://fvb0wj3oqvri" path="res://World/Shop.tscn" id="6_2e1md"]
+[ext_resource type="Texture2D" uid="uid://calfo4v8o60hm" path="res://Characters/Rick/Rick Pixel.png" id="6_r3qni"]
 [ext_resource type="PackedScene" uid="uid://pbqgfeskvh5t" path="res://World/Home.tscn" id="7_njx0r"]
 [ext_resource type="PackedScene" uid="uid://0hunlpvklkta" path="res://World/Tent.tscn" id="8_5gi03"]
 [ext_resource type="PackedScene" uid="uid://c467uvqho2f4e" path="res://World/Trailer.tscn" id="9_fjsfn"]
@@ -509,8 +510,17 @@ y_sort_enabled = true
 
 [node name="Characters" type="Node2D" parent="YSort"]
 
+<<<<<<< HEAD
 [node name="CharacterMarker1" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
 position = Vector2(444, 1340)
+=======
+[node name="Rick" parent="YSort" instance=ExtResource("18_dxj38")]
+position = Vector2(677, 1272)
+character_name = "Rick"
+texture = ExtResource("6_r3qni")
+intro_timeline = "res://Characters/Rick/RickIntro.dtl"
+dialog_timeline = "res://Characters/Rick/RickDialog.dtl"
+>>>>>>> 27f103b (Add Rick Character)
 
 [node name="CharacterMarker2" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
 position = Vector2(549.664, 1323.66)

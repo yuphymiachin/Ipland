@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxqqle1gxrm1x"
-path="res://.godot/imported/trees.png-1f2615aa9d1bd0543db2fbfa05d6f5e2.ctex"
+uid="uid://calfo4v8o60hm"
+path="res://.godot/imported/Rick Pixel.png-b837c0a5411b28e1e2f65e8909eaf56b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/trees.png"
-dest_files=["res://.godot/imported/trees.png-1f2615aa9d1bd0543db2fbfa05d6f5e2.ctex"]
+source_file="res://Characters/Rick/Rick Pixel.png"
+dest_files=["res://.godot/imported/Rick Pixel.png-b837c0a5411b28e1e2f65e8909eaf56b.ctex"]
 
 [params]
 

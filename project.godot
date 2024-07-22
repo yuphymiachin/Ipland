@@ -24,14 +24,14 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Apple": "res://Characters/Apple/Apple.dch",
+"Apple": "res://Characters/Apple Character/Apple Character.dch",
 "Babara": "res://Characters/Barbara/Barbara.dch",
 "Player": "res://Characters/Player.dch",
 "Rick": "res://Characters/Rick/Rick.dch"
 }
 directories/dtl_directory={
-"AppleDialog": "res://Characters/Apple/AppleDialog.dtl",
-"AppleIntro": "res://Characters/Apple/AppleIntro.dtl",
+"AppleDialog": "res://Characters/Apple Character/AppleDialog.dtl",
+"AppleIntro": "res://Characters/Apple Character/AppleIntro.dtl",
 "BabaraDialog 01": "res://Characters/Barbara/BarbaraDialog.dtl",
 "RickDialog": "res://Characters/Rick/RickDialog.dtl",
 "RickIntro": "res://Characters/Rick/RickIntro.dtl",
