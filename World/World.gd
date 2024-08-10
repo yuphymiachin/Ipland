@@ -70,16 +70,19 @@ func to_dict() -> Dictionary:
 	var invisible_collectable_items := []
 	for node in get_tree().get_nodes_in_group("collectable_items"):
 		if not node.visible:
-			var path := get_path_to(node)
+			var path := get_path_to(node) as String
 			invisible_collectable_items.append(path)
 	
 	var spawned_characters := []
 	for spawn_point in get_tree().get_nodes_in_group("character_markers"):
 		for character in spawn_point.get_children():
 			spawned_characters.append({
-				"spawn_point": get_path_to(spawn_point),
+				"spawn_point": get_path_to(spawn_point) as String,
 				"character_resource": character.character_resource.resource_path,
-				"relative_position": character.position
+				"relative_position": {
+					"x": character.position.x,
+					"y": character.position.y
+				}
 			})
 	
 	return {
@@ -91,7 +94,7 @@ func to_dict() -> Dictionary:
 func from_dict(dict: Dictionary) -> void:
 	# Handle invisible collectable items
 	for node in get_tree().get_nodes_in_group("collectable_items"):
-		var path := get_path_to(node)
+		var path := get_path_to(node) as String
 		if path in dict["invisible_collectable_items"]:
 			node.deactivate()
 	
@@ -101,6 +104,6 @@ func from_dict(dict: Dictionary) -> void:
 		var character_instance = character_scene.instantiate()
 		
 		character_instance.character_resource = load(character_data["character_resource"])
-		character_instance.position = character_data["relative_position"]
+		character_instance.position = Vector2(character_data["relative_position"].x, character_data["relative_position"].y)
 		
 		spawn_point.add_child(character_instance)

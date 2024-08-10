@@ -35,4 +35,4 @@ func handle_button_click():
 
 
 func change_scene(path, entry_point):
-	Game.change_scene(path, entry_point)
+	Game.change_scene(path, {"entry_point": entry_point})
