@@ -1,9 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://42bpookry2bf"]
+[gd_scene load_steps=10 format=3 uid="uid://42bpookry2bf"]
 
 [ext_resource type="Script" path="res://Characters/Character.gd" id="1_cg0q4"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rdnj3"]
-load_path = "res://.godot/imported/Apple Pixel.png-710373d00c1bf78a27e7763e2b296434.ctex"
+[ext_resource type="Texture2D" uid="uid://b8kue878p8vdk" path="res://Characters/Kaonashi/Kaonashi Pixel.png" id="2_m82l7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4h8my"]
 radius = 25.02
@@ -56,8 +54,9 @@ tracks/0/keys = {
 "values": [1]
 }
 
-[sub_resource type="Animation" id="Animation_eql3k"]
-resource_name = "Idle_5_frames"
+[sub_resource type="Animation" id="Animation_xpvex"]
+resource_name = "Idle_4_frames"
+length = 0.8
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -66,30 +65,16 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 1, 2, 3]
-}
-
-[sub_resource type="Animation" id="Animation_8sp7s"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [1]
+"values": [0, 1, 2, 3]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_omtmc"]
 _data = {
 "Idle_2_frames": SubResource("Animation_r27lo"),
+"Idle_4_frames": SubResource("Animation_xpvex"),
 "Idle_5_frames": SubResource("Animation_eql3k"),
 "RESET": SubResource("Animation_8sp7s")
 }
@@ -104,7 +89,7 @@ collision_mask = 0
 script = ExtResource("1_cg0q4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("CompressedTexture2D_rdnj3")
+texture = ExtResource("2_m82l7")
 offset = Vector2(0, -26.89)
 hframes = 6
 frame = 1

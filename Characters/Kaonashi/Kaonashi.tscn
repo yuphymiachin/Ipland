@@ -1,12 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://ji2n1r2h1dom"]
+[gd_scene load_steps=6 format=3 uid="uid://cihif5db76eeq"]
 
-[ext_resource type="Script" path="res://Characters/CustomPortrait.gd" id="1_83t1o"]
-[ext_resource type="Texture2D" uid="uid://c6hmbj4ncx6f7" path="res://Characters/Apple Character/Apple Character.png" id="2_ito68"]
+[ext_resource type="Script" path="res://Characters/CustomPortrait.gd" id="1_nksc4"]
+[ext_resource type="Texture2D" uid="uid://cnngc4sliw2m8" path="res://Characters/Kaonashi/Kaonashi.png" id="2_sqxy8"]
 
 [sub_resource type="Animation" id="Animation_eql3k"]
 resource_name = "Idle"
-loop_mode = 2
-step = 0.2
+length = 1.6
+loop_mode = 1
+step = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -14,10 +15,10 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2, 3, 4]
+"values": [0, 1, 2, 3]
 }
 
 [sub_resource type="Animation" id="Animation_8sp7s"]
@@ -41,14 +42,14 @@ _data = {
 "RESET": SubResource("Animation_8sp7s")
 }
 
-[node name="Apple Character" type="Node2D"]
-script = ExtResource("1_83t1o")
+[node name="Babara" type="Node2D"]
+script = ExtResource("1_nksc4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(35, -204)
-texture = ExtResource("2_ito68")
+position = Vector2(30, -174)
+texture = ExtResource("2_sqxy8")
 offset = Vector2(0, -26.89)
-hframes = 5
+hframes = 4
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

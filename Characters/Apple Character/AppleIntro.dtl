@@ -2,11 +2,11 @@
 join Apple 2 [animation="Bounce In"]
 Apple: Hi there! I'm Apple! I just arrived on this island and I’m super excited to be here!
 Player: Welcome to the island, Apple! I'm {player_name}, the campsite manager. I hope you have a great time here!
-Apple: Oh, thank you! Everything looks so cute and cozy. 
+Apple: Oh, thank you! Everything looks so cute and cozy.
 Apple: I can already tell this place is going to be a lot of fun!
 Apple: The air is so fresh here. It feels like I can breathe in a whole new world of possibilities!
 - What brings you to our island?
-	Apple: I heard that this island is known for its friendly vibes and beautiful scenery. 
+	Apple: I heard that this island is known for its friendly vibes and beautiful scenery.
 	Apple: Plus, I wanted a change of pace from my old place. It seemed like the perfect spot to make some new memories!
 	Apple: I’m also hoping to meet lots of new friends and explore all the fun activities you have here.
 - What do you think of the island so far?

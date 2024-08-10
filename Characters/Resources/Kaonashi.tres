@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CharacterResource" load_steps=3 format=3 uid="uid://jmd8qexrkn8m"]
+
+[ext_resource type="Script" path="res://Characters/CharacterResource.gd" id="1_qywj3"]
+[ext_resource type="Texture2D" uid="uid://b8kue878p8vdk" path="res://Characters/Kaonashi/Kaonashi Pixel.png" id="2_ofopm"]
+
+[resource]
+script = ExtResource("1_qywj3")
+character_name = "Kaonashi"
+texture = ExtResource("2_ofopm")
+animation_number_of_frames = 4
+intro_timeline = "res://Characters/Apple Character/AppleIntro.dtl"
+dialog_timeline = "res://Characters/Apple Character/AppleDialog.dtl"

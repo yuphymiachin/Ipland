@@ -57,9 +57,10 @@ overrides = {
 script = ExtResource("2_xb7b8")
 scene = ExtResource("7_ikkx4")
 overrides = {
-"boxes_stylebox_disabled": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/choice_panel_normal.tres\"",
+"boxes_min_size": "Vector2(24, 24)",
+"boxes_stylebox_hovered": "\"Defautl\"",
 "boxes_stylebox_normal": "\"choice_panel_normal.tres\"",
-"boxes_stylebox_pressed": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/choice_panel_normal.tres\"",
+"boxes_v_separation": "60.0",
 "font_custom": "\"res://UI/Font/pixel_operator/PixelOperatorHB.ttf\"",
 "font_size_custom": "30.0",
 "font_size_use_global": "false",

@@ -1,9 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://brvw6kmw3kfbg"]
+[gd_scene load_steps=3 format=3 uid="uid://brvw6kmw3kfbg"]
 
 [ext_resource type="Texture2D" uid="uid://3mktbcgjj8wf" path="res://UI/Buttons/[0] Transparent Wood/[1] Normal.png" id="1_akoaw"]
 [ext_resource type="LabelSettings" uid="uid://bdu676d3tismq" path="res://UI/Font/Label.tres" id="4_umuro"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b0no2"]
 
 [node name="SelectionOptionButton" type="TextureButton"]
 offset_right = 64.0
@@ -34,17 +32,5 @@ text = "Getg"
 label_settings = ExtResource("4_umuro")
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
-visible = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = SubResource("CompressedTexture2D_b0no2")
-region_rect = Rect2(0, 0, 64, 16)
-patch_margin_left = 15
-patch_margin_top = 15
-patch_margin_right = 15
-patch_margin_bottom = 15
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

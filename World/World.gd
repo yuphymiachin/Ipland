@@ -6,7 +6,8 @@ extends Node2D
 var character_pool = [
 	preload("res://Characters/Resources/Barbara.tres"),
 	preload("res://Characters/Resources/Apple.tres"),
-	preload("res://Characters/Resources/Rick.tres")
+	preload("res://Characters/Resources/Rick.tres"),
+	preload("res://Characters/Resources/Kaonashi.tres")
 ]
 
 var character_scene = preload("res://Characters/CharacterPixel.tscn")
