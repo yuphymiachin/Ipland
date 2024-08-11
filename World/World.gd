@@ -17,6 +17,7 @@ func _ready():
 	var style: DialogicStyle = load("res://Characters/DialogueStyle.tres")
 	style.prepare()
 	
+	
 	generate_characters()
 
 
