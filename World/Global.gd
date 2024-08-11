@@ -4,6 +4,9 @@ signal add_selection_option_requested(key, text, callback)
 
 signal remove_selection_option_requested(key)
 
+signal generate_character_requested
+
+
 enum Item {
 	APPLE,
 	COFFEE_BEAN,
@@ -50,7 +53,7 @@ func remove_inventory(item: Item, count: int):
 
 
 var visitor_count = 0
-var new_visitor_count = 2
+var new_visitor_count = 3
 
 
 # Define how many new visitors can come to the island

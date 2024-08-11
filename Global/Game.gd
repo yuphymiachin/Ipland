@@ -4,7 +4,10 @@ const SAVE_PATH := "user://dava.sav"
 
 var world_state := {}
 
-# Called when the node enters the scene tree for the first time.
+var is_game_state_loaded = false
+
+var is_world_scene_initialized = false
+
 func _ready():
 	load_game()
 
@@ -15,25 +18,21 @@ func _process(delta):
 
 
 func change_scene(path: String, params := {}, initial := false) -> void:
-	if !initial:
-		var old_name := get_tree().current_scene.scene_file_path.get_file().get_basename()
-		world_state[old_name] = get_tree().current_scene.to_dict()
+	print("Changing scene")
 
 	if initial:
 		get_tree().call_deferred("change_scene_to_file", path)
 	else:
+		var old_name := get_tree().current_scene.scene_file_path.get_file().get_basename()
+		world_state[old_name] = get_tree().current_scene.to_dict()
 		get_tree().change_scene_to_file(path)
 
 	# Wait for the scene to finish loading
 	await get_tree().tree_changed
 	if initial:
 		await get_tree().process_frame
+		is_game_state_loaded = true
 	
-	# Now call _resume_scene_change
-	#call_deferred("_resume_scene_change", params)
-	_resume_scene_change(params)
-
-func _resume_scene_change(params := {}):
 	var new_scene = get_tree().current_scene
 	if !is_instance_valid(new_scene):
 		print("New scene is not valid after change. Wait for 1 frame")
@@ -57,6 +56,7 @@ func _resume_scene_change(params := {}):
 				break
 	elif "position" in params:
 		new_scene.update_player(params.position)
+
 
 
 func save_game() -> void:
@@ -87,6 +87,7 @@ func load_game() -> void:
 	print("Loading game from data.sav")
 	var file := FileAccess.open(SAVE_PATH, FileAccess.READ)
 	if not file:
+		is_game_state_loaded = true
 		return
 	var json:= file.get_as_text()
 	var data := JSON.parse_string(json) as Dictionary
@@ -101,16 +102,10 @@ func load_game() -> void:
 		converted_inventory[int(key)] = data.inventory[key]
 	# Assign the converted inventory to Global.inventory
 	Global.inventory = converted_inventory
-
 	
 	#change_scene(data.scene, {"position": Vector2(data.player.position.x, data.player.position.y)}, false)
 	change_scene("res://World/World.tscn", {"entry_point": "EntryPoint"}, true)
-
-
-func _unhandled_input(event):
-	if event.is_action_pressed("ui_cancel"):
-		load_game()
-
+	
 
 func _notification(what):
 	if what == NOTIFICATION_WM_CLOSE_REQUEST or what == NOTIFICATION_WM_GO_BACK_REQUEST:

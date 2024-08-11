@@ -16,26 +16,50 @@ var character_scene = preload("res://Characters/CharacterPixel.tscn")
 func _ready():
 	var style: DialogicStyle = load("res://Characters/DialogueStyle.tres")
 	style.prepare()
-	
-	
-	generate_characters()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	if Game.is_game_state_loaded and not Game.is_world_scene_initialized:
+		#Game.load_game()
+		Game.is_world_scene_initialized = true
+		generate_characters()
 
 
 func generate_characters():
+	print("Generating characters")
 	var number_of_visitors = Global.get_new_visitor_count()
 	
-	var spawn_positions = get_tree().get_nodes_in_group("character_markers")
+	var all_spawn_positions = get_tree().get_nodes_in_group("character_markers")
+	
+	var spawn_positions = []
+	
+	for pos in all_spawn_positions:
+		var found = false
+		if "World" in Game.world_state and "spawned_characters" in Game.world_state["World"]:
+			for spawned_character in Game.world_state["World"]["spawned_characters"]:
+				if spawned_character.spawn_point in (pos.get_path() as String):
+					found = true
+					break
+		if not found:
+			spawn_positions.append(pos)
 	
 	# Shuffle the spawn positions to pick random ones
 	spawn_positions.shuffle()
 	
 	# Create a copy of the character pool to avoid modifying the original
-	var available_characters = character_pool.duplicate()
+	var available_characters = []
+	
+	for character in character_pool:
+		var found = false
+		if "World" in Game.world_state and "spawned_characters" in Game.world_state["World"]:
+			for spawned_character in Game.world_state["World"]["spawned_characters"]:
+				print(character.character_name)
+				print(spawned_character.character_resource)
+				if character.character_name in spawned_character.character_resource:
+					found = true
+					break
+		if not found:
+			available_characters.append(character)
+	
+	
 	
 	for i in range(min(number_of_visitors, spawn_positions.size(), available_characters.size())):
 		var spawn_position = spawn_positions[i]
@@ -58,6 +82,8 @@ func generate_characters():
 		
 		# Tell global script that one character has been added
 		Global.report_new_visitors(1)
+		
+		print("Generated " + character_resource.character_name)
 
 
 func update_player(position: Vector2):
