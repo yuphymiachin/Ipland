@@ -12,13 +12,11 @@ var character_pool = [
 
 var character_scene = preload("res://Characters/CharacterPixel.tscn")
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	var style: DialogicStyle = load("res://Characters/DialogueStyle.tres")
 	style.prepare()
 
 	if Game.is_game_state_loaded and not Game.is_world_scene_initialized:
-		#Game.load_game()
 		Game.is_world_scene_initialized = true
 		generate_characters()
 
@@ -51,8 +49,6 @@ func generate_characters():
 		var found = false
 		if "World" in Game.world_state and "spawned_characters" in Game.world_state["World"]:
 			for spawned_character in Game.world_state["World"]["spawned_characters"]:
-				print(character.character_name)
-				print(spawned_character.character_resource)
 				if character.character_name in spawned_character.character_resource:
 					found = true
 					break

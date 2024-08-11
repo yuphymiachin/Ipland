@@ -74,7 +74,8 @@ func save_game() -> void:
 				"y": scene.player.global_position.y
 			}
 		},
-		"inventory": Global.inventory
+		"inventory": Global.inventory,
+		"time": Time.get_unix_time_from_system()
 	}
 	var json := JSON.stringify(data)
 	var file := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
@@ -93,8 +94,6 @@ func load_game() -> void:
 	var data := JSON.parse_string(json) as Dictionary
 	
 	world_state = data.world_state
-	Global.inventory = data.inventory
-
 
 	var converted_inventory = {}
 	# Convert keys to integers and keep the values as they are
@@ -103,10 +102,23 @@ func load_game() -> void:
 	# Assign the converted inventory to Global.inventory
 	Global.inventory = converted_inventory
 	
+	if _should_spawn_new_visitor(data.time):
+		Global.update_new_visitor_count()
+	
 	#change_scene(data.scene, {"position": Vector2(data.player.position.x, data.player.position.y)}, false)
 	change_scene("res://World/World.tscn", {"entry_point": "EntryPoint"}, true)
-	
 
+func _should_spawn_new_visitor(last_game_time):
+	var difference_in_seconds = abs(Time.get_unix_time_from_system() - last_game_time)
+
+	print(difference_in_seconds)
+	if difference_in_seconds >= 10:
+		print("The timestamps are greater than 10 seconds")
+		return true
+	else:
+		print("The timestamps are not 10 seconds apart.")
+		return false
+	
 func _notification(what):
 	if what == NOTIFICATION_WM_CLOSE_REQUEST or what == NOTIFICATION_WM_GO_BACK_REQUEST:
 		print("Quitting game")
