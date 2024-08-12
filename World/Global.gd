@@ -27,17 +27,17 @@ func get_item_display_name(item: Item) -> String:
 
 
 var inventory = {
-	Item.APPLE: 12,
-	Item.COFFEE_BEAN: 12,
-	Item.COCONUT: 8,
-	Item.FIREWOOD: 20
+	#Item.APPLE: 12,
+	#Item.COFFEE_BEAN: 12,
+	#Item.COCONUT: 8,
+	#Item.FIREWOOD: 20
 }
 
 # Define required quantities for new visitor
-const REQUIRED_APPLES = 6
+const REQUIRED_APPLES = 4
 const REQUIRED_COFFEE_BEANS = 6
-const REQUIRED_COCONUTS = 4
-const REQUIRED_FIREWOOD = 10
+const REQUIRED_COCONUTS = 8
+const REQUIRED_FIREWOOD = 12
 
 
 func get_inventory(item: Item):

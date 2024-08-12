@@ -1,7 +1,10 @@
-[gd_scene format=3 uid="uid://bi8h5cotw6pui"]
+[gd_scene load_steps=2 format=3 uid="uid://bi8h5cotw6pui"]
+
+[ext_resource type="Texture2D" uid="uid://bxk8b1ax8bakb" path="res://World/Tents.png" id="1_8adeo"]
 
 [node name="SpeedBoat" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8adeo")
 hframes = 4
 frame = 2

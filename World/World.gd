@@ -7,7 +7,7 @@ var character_pool = [
 	preload("res://Characters/Resources/Barbara.tres"),
 	preload("res://Characters/Resources/Apple.tres"),
 	preload("res://Characters/Resources/Rick.tres"),
-	preload("res://Characters/Resources/Kaonashi.tres")
+	#preload("res://Characters/Resources/Kaonashi.tres")
 ]
 
 var character_scene = preload("res://Characters/CharacterPixel.tscn")
@@ -75,6 +75,9 @@ func generate_characters():
 		# Set the character's position relative to the spawn position
 		character_instance.position = Vector2.ZERO
 		
+		if spawn_position.get_child(0):
+			spawn_position.get_child(0).visible = true
+		
 		# Add the character as a child of the spawn position
 		spawn_position.add_child(character_instance)
 		
@@ -101,14 +104,15 @@ func to_dict() -> Dictionary:
 	var spawned_characters := []
 	for spawn_point in get_tree().get_nodes_in_group("character_markers"):
 		for character in spawn_point.get_children():
-			spawned_characters.append({
-				"spawn_point": get_path_to(spawn_point) as String,
-				"character_resource": character.character_resource.resource_path,
-				"relative_position": {
-					"x": character.position.x,
-					"y": character.position.y
-				}
-			})
+			if "character_resource" in character:
+				spawned_characters.append({
+					"spawn_point": get_path_to(spawn_point) as String,
+					"character_resource": character.character_resource.resource_path,
+					"relative_position": {
+						"x": character.position.x,
+						"y": character.position.y
+					}
+				})
 	
 	return {
 		"invisible_collectable_items": invisible_collectable_items,

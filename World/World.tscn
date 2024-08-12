@@ -510,16 +510,124 @@ y_sort_enabled = true
 y_sort_enabled = true
 
 [node name="CharacterMarker1" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
-position = Vector2(1420, 1596)
+y_sort_enabled = true
+position = Vector2(797, 112)
+
+[node name="Tent2" parent="YSort/Characters/CharacterMarker1" instance=ExtResource("8_5gi03")]
+visible = false
+position = Vector2(-79, -12)
 
 [node name="CharacterMarker2" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
-position = Vector2(1624, 1650)
+y_sort_enabled = true
+position = Vector2(929, 340)
+
+[node name="Tent2" parent="YSort/Characters/CharacterMarker2" instance=ExtResource("8_5gi03")]
+visible = false
+position = Vector2(-59, -32)
 
 [node name="CharacterMarker3" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
-position = Vector2(1460, 1656)
+y_sort_enabled = true
+position = Vector2(762, 1589)
+
+[node name="SpeedBoat" parent="YSort/Characters/CharacterMarker3" instance=ExtResource("10_am7jm")]
+visible = false
+position = Vector2(-36, -109)
 
 [node name="CharacterMarker4" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
-position = Vector2(1620, 1605)
+y_sort_enabled = true
+position = Vector2(1451, 474)
+
+[node name="HouseBoat" parent="YSort/Characters/CharacterMarker4" instance=ExtResource("11_6hjim")]
+visible = false
+position = Vector2(-88, -62)
+
+[node name="CharacterMarker5" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(3040, 3200)
+
+[node name="CharacterMarker6" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(3244, 3255)
+
+[node name="CharacterMarker7" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(3080, 3261)
+
+[node name="CharacterMarker8" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(3240, 3210)
+
+[node name="CharacterMarker9" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(981, 1778)
+
+[node name="CharacterMarker10" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(1122, 1064)
+
+[node name="SpeedBoat2" parent="YSort/Characters/CharacterMarker10" instance=ExtResource("10_am7jm")]
+position = Vector2(193, -71)
+
+[node name="CharacterMarker11" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(974, 1270)
+
+[node name="CharacterMarker12" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(520, 933)
+
+[node name="HouseBoat2" parent="YSort/Characters/CharacterMarker12" instance=ExtResource("11_6hjim")]
+visible = false
+position = Vector2(-93, -57)
+
+[node name="CharacterMarker13" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(304, 1162)
+
+[node name="Tent" parent="YSort/Characters/CharacterMarker13" instance=ExtResource("8_5gi03")]
+visible = false
+y_sort_enabled = true
+position = Vector2(-80, -22)
+
+[node name="CharacterMarker14" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(1473, 1276)
+
+[node name="Tent" parent="YSort/Characters/CharacterMarker14" instance=ExtResource("8_5gi03")]
+y_sort_enabled = true
+position = Vector2(-37, -48)
+
+[node name="CharacterMarker15" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(3040, 3201)
+
+[node name="CharacterMarker16" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(3244, 3255)
+
+[node name="CharacterMarker17" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(3080, 3261)
+
+[node name="CharacterMarker18" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(3240, 3210)
+
+[node name="CharacterMarker19" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(1231, 1554)
+
+[node name="Trailer2" parent="YSort/Characters/CharacterMarker19" instance=ExtResource("9_fjsfn")]
+visible = false
+position = Vector2(-79, -41)
+
+[node name="CharacterMarker20" type="Marker2D" parent="YSort/Characters" groups=["character_markers"]]
+y_sort_enabled = true
+position = Vector2(1794, 1214)
+
+[node name="Trailer" parent="YSort/Characters/CharacterMarker20" instance=ExtResource("9_fjsfn")]
+visible = false
+position = Vector2(-74, -39)
 
 [node name="Player" parent="YSort" instance=ExtResource("5_4bvsm")]
 position = Vector2(1533, 1617)
@@ -528,7 +636,7 @@ position = Vector2(1533, 1617)
 remote_path = NodePath("../../../Camera2D")
 
 [node name="Shop" parent="YSort" instance=ExtResource("6_2e1md")]
-position = Vector2(1474, 1518)
+position = Vector2(536, 1246)
 
 [node name="Home" parent="YSort" instance=ExtResource("7_njx0r")]
 position = Vector2(1544, 1567)
@@ -536,38 +644,17 @@ position = Vector2(1544, 1567)
 [node name="EntryPoint" type="Marker2D" parent="YSort" groups=["entry_points"]]
 position = Vector2(1533, 1617)
 
-[node name="Tent" parent="YSort" instance=ExtResource("8_5gi03")]
-position = Vector2(1516, 1253)
-
-[node name="Tent2" parent="YSort" instance=ExtResource("8_5gi03")]
-position = Vector2(1660, 789)
-
-[node name="Trailer" parent="YSort" instance=ExtResource("9_fjsfn")]
-position = Vector2(1784, 1187)
-
-[node name="Trailer2" parent="YSort" instance=ExtResource("9_fjsfn")]
-position = Vector2(1199, 1593)
-
-[node name="SpeedBoat" parent="YSort" instance=ExtResource("10_am7jm")]
-position = Vector2(806, 1504)
-
-[node name="SpeedBoat2" parent="YSort" instance=ExtResource("10_am7jm")]
-position = Vector2(1315, 993)
-
-[node name="HouseBoat" parent="YSort" instance=ExtResource("11_6hjim")]
-position = Vector2(1363, 412)
-
-[node name="HouseBoat2" parent="YSort" instance=ExtResource("11_6hjim")]
-position = Vector2(397, 867)
-
 [node name="CoffeeTree" parent="YSort" instance=ExtResource("12_agblf")]
-position = Vector2(817, 1289)
+position = Vector2(779, 1324)
+
+[node name="CoffeeTree6" parent="YSort" instance=ExtResource("12_agblf")]
+position = Vector2(826, 1575)
 
 [node name="CoffeeTree2" parent="YSort" instance=ExtResource("12_agblf")]
-position = Vector2(529, 964)
+position = Vector2(577, 912)
 
 [node name="CoffeeTree3" parent="YSort" instance=ExtResource("12_agblf")]
-position = Vector2(406, 1163)
+position = Vector2(371, 1147)
 
 [node name="CoffeeTree4" parent="YSort" instance=ExtResource("12_agblf")]
 position = Vector2(237, 1054)
@@ -576,7 +663,7 @@ position = Vector2(237, 1054)
 position = Vector2(178, 734)
 
 [node name="SakuraTree" parent="YSort" instance=ExtResource("13_o0uyj")]
-position = Vector2(1877, 1269)
+position = Vector2(1857, 1196)
 
 [node name="SakuraTree2" parent="YSort" instance=ExtResource("13_o0uyj")]
 position = Vector2(1901, 911)
@@ -591,7 +678,7 @@ position = Vector2(1550, 835)
 position = Vector2(1649, 648)
 
 [node name="SakuraTree6" parent="YSort" instance=ExtResource("13_o0uyj")]
-position = Vector2(1456, 484)
+position = Vector2(1506, 452)
 
 [node name="CoconutTree" parent="YSort" instance=ExtResource("14_0vvly")]
 position = Vector2(1133, 1920)
@@ -603,7 +690,7 @@ position = Vector2(1890, 1624)
 position = Vector2(1913, 590)
 
 [node name="CoconutTree5" parent="YSort" instance=ExtResource("14_0vvly")]
-position = Vector2(835, 70)
+position = Vector2(852, 94)
 
 [node name="CoconutTree6" parent="YSort" instance=ExtResource("14_0vvly")]
 position = Vector2(510, 204)
@@ -618,7 +705,7 @@ position = Vector2(1712, 1606)
 position = Vector2(1521, 1447)
 
 [node name="AppleTree3" parent="YSort" instance=ExtResource("15_hxabf")]
-position = Vector2(1457, 1291)
+position = Vector2(1520, 1256)
 
 [node name="AppleTree4" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1296, 1545)
@@ -645,7 +732,7 @@ position = Vector2(1366, 893)
 position = Vector2(1202, 668)
 
 [node name="AppleTree12" parent="YSort" instance=ExtResource("15_hxabf")]
-position = Vector2(625, 925)
+position = Vector2(674, 856)
 
 [node name="AppleTree13" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(304, 902)
@@ -665,11 +752,71 @@ position = Vector2(1008, 321)
 [node name="AppleTree18" parent="YSort" instance=ExtResource("15_hxabf")]
 position = Vector2(1172, 420)
 
-[node name="Firewood" parent="YSort" instance=ExtResource("16_1wiep")]
-position = Vector2(1676, 1774)
-
 [node name="ShopExit" type="Marker2D" parent="YSort" groups=["entry_points"]]
-position = Vector2(1473, 1569)
+position = Vector2(535, 1297)
+
+[node name="Firewood" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(149, 1064)
+
+[node name="Firewood3" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(835, 540)
+
+[node name="Firewood2" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(847, 1175)
+
+[node name="Firewood4" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(220, 874)
+
+[node name="Firewood5" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1207, 854)
+
+[node name="Firewood6" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1585, 661)
+
+[node name="Firewood7" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1240, 447)
+
+[node name="Firewood8" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(487, 469)
+
+[node name="Firewood9" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(272, 684)
+
+[node name="Firewood10" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(455, 1121)
+
+[node name="Firewood11" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(610, 780)
+
+[node name="Firewood12" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(684, 651)
+
+[node name="Firewood13" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1842, 928)
+
+[node name="Firewood14" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1897, 1244)
+
+[node name="Firewood15" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1582, 901)
+
+[node name="Firewood16" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1072, 912)
+
+[node name="Firewood17" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(839, 1360)
+
+[node name="Firewood18" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1361, 1461)
+
+[node name="Firewood19" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1460, 1443)
+
+[node name="Firewood20" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1585, 1252)
+
+[node name="Firewood21" parent="YSort" instance=ExtResource("16_1wiep")]
+position = Vector2(1659, 1601)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

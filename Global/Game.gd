@@ -114,11 +114,11 @@ func _should_spawn_new_visitor(last_game_time):
 	var difference_in_seconds = abs(Time.get_unix_time_from_system() - last_game_time)
 
 	print(difference_in_seconds)
-	if difference_in_seconds >= 10:
-		print("The timestamps are greater than 10 seconds")
+	if difference_in_seconds >= 3600:
+		print("The timestamps are greater than 1 hour")
 		return true
 	else:
-		print("The timestamps are not 10 seconds apart.")
+		print("The timestamps are not 1 hour apart.")
 		return false
 	
 func _notification(what):

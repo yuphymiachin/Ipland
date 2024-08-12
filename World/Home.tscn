@@ -3,15 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://dn1cx3hxpbmqq" path="res://World/Buildings.png" id="1_twggf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0lese"]
-size = Vector2(60, 16)
+size = Vector2(60, 20)
 
 [node name="Home" type="StaticBody2D"]
 collision_mask = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_twggf")
+offset = Vector2(2.08165e-12, -19.87)
 hframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 31)
+position = Vector2(0, 10)
 shape = SubResource("RectangleShape2D_0lese")
