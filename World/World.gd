@@ -24,6 +24,8 @@ func _ready():
 func generate_characters():
 	print("Generating characters")
 	var number_of_visitors = Global.get_new_visitor_count()
+	if number_of_visitors == 0:
+		return
 	
 	var all_spawn_positions = get_tree().get_nodes_in_group("character_markers")
 	

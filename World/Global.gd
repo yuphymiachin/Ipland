@@ -19,12 +19,6 @@ const item_display_names := {
 	Item.FIREWOOD: "Firewood"
 }
 
-# Define required quantities for new visitor
-const REQUIRED_APPLES = 2
-const REQUIRED_COFFEE_BEANS = 1
-const REQUIRED_COCONUTS = 2
-const REQUIRED_FIREWOOD = 3
-
 func get_item_display_name(item: Item) -> String:
 	if item_display_names.has(item):
 		return item_display_names[item]
@@ -32,7 +26,18 @@ func get_item_display_name(item: Item) -> String:
 		return ""
 
 
-var inventory = {}
+var inventory = {
+	Item.APPLE: 12,
+	Item.COFFEE_BEAN: 12,
+	Item.COCONUT: 8,
+	Item.FIREWOOD: 20
+}
+
+# Define required quantities for new visitor
+const REQUIRED_APPLES = 6
+const REQUIRED_COFFEE_BEANS = 6
+const REQUIRED_COCONUTS = 4
+const REQUIRED_FIREWOOD = 10
 
 
 func get_inventory(item: Item):
@@ -57,12 +62,6 @@ var visitor_count = 0
 var new_visitor_count = 0
 
 func update_new_visitor_count():
-	# Define required quantities for new visitor
-	const REQUIRED_APPLES = 2
-	const REQUIRED_COFFEE_BEANS = 1
-	const REQUIRED_COCONUTS = 2
-	const REQUIRED_FIREWOOD = 3
-	
 	# Check current inventory
 	var apples = get_inventory(Item.APPLE)
 	var coffee_beans = get_inventory(Item.COFFEE_BEAN)

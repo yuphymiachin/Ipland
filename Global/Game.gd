@@ -56,7 +56,8 @@ func change_scene(path: String, params := {}, initial := false) -> void:
 				break
 	elif "position" in params:
 		new_scene.update_player(params.position)
-
+	
+	Game.save_game()
 
 
 func save_game() -> void:
@@ -89,6 +90,7 @@ func load_game() -> void:
 	var file := FileAccess.open(SAVE_PATH, FileAccess.READ)
 	if not file:
 		is_game_state_loaded = true
+		Global.update_new_visitor_count()
 		return
 	var json:= file.get_as_text()
 	var data := JSON.parse_string(json) as Dictionary

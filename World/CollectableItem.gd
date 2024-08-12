@@ -41,6 +41,7 @@ func handle_button_click():
 	Global.remove_selection_option_requested.emit(self)
 	# Update inventory
 	Global.add_inventory(item, 1)
+	Game.save_game()
 
 func deactivate():
 	hide()
