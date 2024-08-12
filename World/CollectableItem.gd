@@ -3,6 +3,8 @@ extends Area2D
 
 @export var item: Global.Item
 @export var flip_h: bool
+@export var respawn_time_in_seconds: int
+@export var next_respawn: int
 
 var item_sprite_frame_map = {
 	Global.Item.APPLE: 0,
@@ -39,6 +41,7 @@ func handle_button_click():
 	print("Button clicked, setting visible to false, sending remove_selection_option_requested event")
 	deactivate()
 	Global.remove_selection_option_requested.emit(self)
+	next_respawn = Time.get_unix_time_from_system() + respawn_time_in_seconds
 	# Update inventory
 	Global.add_inventory(item, 1)
 	Game.save_game()

@@ -13,6 +13,7 @@ collision_layer = 0
 collision_mask = 2
 script = ExtResource("1_jid63")
 item = 3
+respawn_time_in_seconds = 21600
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_el8ix")

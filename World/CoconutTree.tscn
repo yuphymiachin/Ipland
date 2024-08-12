@@ -17,6 +17,7 @@ scale = Vector2(0.66, 0.66)
 [node name="Fruit2" parent="." instance=ExtResource("2_24sj7")]
 position = Vector2(-11, -43)
 item = 2
+respawn_time_in_seconds = 86400
 
 [node name="Sprite2D" parent="Fruit2" index="1"]
 frame = 2

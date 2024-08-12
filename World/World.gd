@@ -99,7 +99,10 @@ func to_dict() -> Dictionary:
 	for node in get_tree().get_nodes_in_group("collectable_items"):
 		if not node.visible:
 			var path := get_path_to(node) as String
-			invisible_collectable_items.append(path)
+			invisible_collectable_items.append({
+				"path": path,
+				"next_respawn": node.next_respawn
+			})
 	
 	var spawned_characters := []
 	for spawn_point in get_tree().get_nodes_in_group("character_markers"):
@@ -124,8 +127,10 @@ func from_dict(dict: Dictionary) -> void:
 	# Handle invisible collectable items
 	for node in get_tree().get_nodes_in_group("collectable_items"):
 		var path := get_path_to(node) as String
-		if path in dict["invisible_collectable_items"]:
-			node.deactivate()
+		for item in dict["invisible_collectable_items"]:
+			if path == item.path and Time.get_unix_time_from_system() < item.next_respawn:
+				node.deactivate()
+				node.next_respawn = item.next_respawn
 	
 	# Spawn characters
 	for character_data in dict["spawned_characters"]:

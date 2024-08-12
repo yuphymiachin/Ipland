@@ -12,9 +12,11 @@ frame = 0
 
 [node name="Fruit" parent="." instance=ExtResource("2_x1vvg")]
 position = Vector2(0.03, -78.23)
+respawn_time_in_seconds = 172800
 
 [node name="Fruit2" parent="." instance=ExtResource("2_x1vvg")]
 position = Vector2(-18.47, -54)
+respawn_time_in_seconds = 172800
 
 [node name="Fruit3" parent="." instance=ExtResource("2_x1vvg")]
 position = Vector2(18.14, -54)

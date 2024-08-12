@@ -755,67 +755,67 @@ position = Vector2(1172, 420)
 [node name="ShopExit" type="Marker2D" parent="YSort" groups=["entry_points"]]
 position = Vector2(535, 1297)
 
-[node name="Firewood" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(149, 1064)
 
-[node name="Firewood3" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood3" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(835, 540)
 
-[node name="Firewood2" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood2" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(847, 1175)
 
-[node name="Firewood4" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood4" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(220, 874)
 
-[node name="Firewood5" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood5" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1207, 854)
 
-[node name="Firewood6" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood6" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1585, 661)
 
-[node name="Firewood7" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood7" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1240, 447)
 
-[node name="Firewood8" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood8" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(487, 469)
 
-[node name="Firewood9" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood9" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(272, 684)
 
-[node name="Firewood10" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood10" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(455, 1121)
 
-[node name="Firewood11" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood11" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(610, 780)
 
-[node name="Firewood12" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood12" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(684, 651)
 
-[node name="Firewood13" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood13" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1842, 928)
 
-[node name="Firewood14" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood14" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1897, 1244)
 
-[node name="Firewood15" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood15" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1582, 901)
 
-[node name="Firewood16" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood16" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1072, 912)
 
-[node name="Firewood17" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood17" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(839, 1360)
 
-[node name="Firewood18" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood18" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1361, 1461)
 
-[node name="Firewood19" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood19" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1460, 1443)
 
-[node name="Firewood20" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood20" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1585, 1252)
 
-[node name="Firewood21" parent="YSort" instance=ExtResource("16_1wiep")]
+[node name="Firewood21" parent="YSort" groups=["collectable_items"] instance=ExtResource("16_1wiep")]
 position = Vector2(1659, 1601)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
