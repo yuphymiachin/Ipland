@@ -34,10 +34,10 @@ var inventory = {
 }
 
 # Define required quantities for new visitor
-const REQUIRED_APPLES = 4
-const REQUIRED_COFFEE_BEANS = 6
-const REQUIRED_COCONUTS = 8
-const REQUIRED_FIREWOOD = 12
+const REQUIRED_APPLES = 10
+const REQUIRED_COFFEE_BEANS = 4
+const REQUIRED_COCONUTS = 6
+const REQUIRED_FIREWOOD = 8
 
 
 func get_inventory(item: Item):
